@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Financial Freedom with TGR - Start Your Journey Today!</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --primary-color: #0b132b; /* Deep Navy */
+            --secondary-color: #1c2541; /* Slightly Lighter Navy */
+            --accent-color-1: #3a506b; /* Muted Blue */
+            --accent-color-2: #5bc0be; /* Teal */
+            --highlight-color: #ffca3a; /* Gold/Yellow */
+            --white-color: #ffffff;
+            --light-text: #e0e0e0;
+            --dark-text: #a0aec0; /* Greyish text */
+            --success-color: #28a745;
+            --card-bg: rgba(28, 37, 65, 0.8); /* Semi-transparent card */
+            --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            --gradient-accent: linear-gradient(90deg, var(--accent-color-2), #4ecdc4);
+            --gradient-highlight: linear-gradient(90deg, var(--highlight-color), #ffb703);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--primary-color);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%231c2541' fill-opacity='0.1' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.99-7.5L26 15v18.5l-13 7.5L0 33.5V15z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); /* Subtle background pattern */
+            color: var(--light-text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Header / Hero --- */
+        .hero {
+            background: var(--gradient-primary);
+            padding: 6rem 0 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 5px solid var(--accent-color-2);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(91, 192, 190, 0.1) 0%, rgba(91, 192, 190, 0) 70%);
+            animation: rotate 25s linear infinite;
+            z-index: 0;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .tgr-logo {
+            max-width: 200px;
+            margin-bottom: 2rem;
+        }
+
+        .referrer-info {
+            margin-bottom: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .referrer-pic-wrapper {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--accent-color-2);
+            padding: 5px;
+            background-color: var(--secondary-color);
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(91, 192, 190, 0.3);
+        }
+
+        .referrer-pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block; /* Removes bottom space */
+        }
+
+        .referrer-details h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            color: var(--white-color);
+            margin-bottom: 0.3rem;
+        }
+
+        .referrer-details p {
+            font-size: 1.1rem;
+            color: var(--accent-color-2);
+        }
+        .referrer-details p i {
+            margin-right: 8px;
+        }
+
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--white-color);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h1 span {
+            color: var(--highlight-color);
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            color: var(--light-text);
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+            font-weight: 300;
+        }
+
+        /* --- General Section Styling --- */
+        section {
+            padding: 5rem 0;
+        }
+
+        section:nth-child(even) {
+            background-color: rgba(28, 37, 65, 0.5); /* Subtle difference */
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--accent-color-2);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--highlight-color);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--dark-text);
+            margin-bottom: 3.5rem;
+            max-width: 850px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- CTA Buttons --- */
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin: 0.5rem;
+            text-align: center;
+        }
+
+        .cta-button i {
+            margin-right: 10px;
+        }
+
+        .cta-button.primary {
+            background: var(--gradient-highlight);
+            color: var(--primary-color);
+            box-shadow: 0 5px 15px rgba(255, 202, 58, 0.4);
+        }
+
+        .cta-button.primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 202, 58, 0.6);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            color: var(--accent-color-2);
+            border: 2px solid var(--accent-color-2);
+        }
+
+        .cta-button.secondary:hover {
+            background: var(--accent-color-2);
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .cta-container {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        /* --- Why TGR Section --- */
+        #why-tgr .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        #why-tgr .text-content h3 {
+            font-size: 1.8rem;
+            color: var(--highlight-color);
+            margin-bottom: 1rem;
+        }
+
+        #why-tgr .text-content p {
+            margin-bottom: 1rem;
+        }
+
+        #why-tgr .illustration img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* --- What is TGR Section --- */
+        #what-is-tgr {
+             background: var(--secondary-color);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-item {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 5px solid var(--accent-color-2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(91, 192, 190, 0.15);
+        }
+
+        .feature-item .icon {
+            font-size: 3rem;
+            color: var(--highlight-color);
+            margin-bottom: 1rem;
+        }
+
+        .feature-item h4 {
+            font-size: 1.3rem;
+            color: var(--accent-color-2);
+            margin-bottom: 0.5rem;
+        }
+
+        /* --- Pearl Mini Plan Section --- */
+        #pearl-mini-plan .levels-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            margin-top: 3rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .level-step {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 2rem;
+            display: flex;
+            align-items: flex-start; /* Align items to top */
+            gap: 2rem;
+            border: 1px solid rgba(91, 192, 190, 0.2);
+            transition: box-shadow 0.3s ease;
+        }
+         .level-step:hover {
+             box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+         }
+
+        .level-step .level-icon {
+            font-size: 2rem;
+            color: var(--highlight-color);
+            min-width: 50px;
+            text-align: center;
+            padding-top: 0.5rem; /* Adjust vertical alignment */
+        }
+         .level-step .level-icon i {
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .level-content h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--accent-color-2);
+            margin-bottom: 0.5rem;
+        }
+        .level-content h3 span { /* Level Number */
+            color: var(--highlight-color);
+            font-size: 1.1em;
+            margin-right: 10px;
+        }
+
+        .level-content p {
+            margin-bottom: 0.8rem;
+            color: var(--light-text);
+        }
+
+        .level-content .calculation {
+            background-color: rgba(11, 19, 43, 0.7); /* Darker background */
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+            font-size: 1.1rem;
+            border: 1px solid rgba(91, 192, 190, 0.1);
+            font-weight: 600;
+        }
+
+        .level-content .calculation span {
+            font-weight: 700;
+            color: var(--highlight-color);
+        }
+        .level-content .calculation .result {
+             color: var(--success-color);
+        }
+
+        .level-content .what-next {
+            font-weight: 600;
+            color: var(--white-color);
+            margin-top: 1rem;
+            background: rgba(91, 192, 190, 0.1);
+            padding: 0.8rem;
+            border-radius: 5px;
+            border-left: 3px solid var(--accent-color-2);
+        }
+        .level-content .what-next span {
+            color: var(--success-color);
+            font-weight: 700;
+        }
+        .level-content .upgrade-note {
+             font-size: 0.9rem;
+             color: var(--dark-text);
+             margin-top: 0.5rem;
+             font-style: italic;
+        }
+
+        /* --- Benefits Section --- */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        .benefit-item .icon {
+            font-size: 2.5rem;
+            color: var(--accent-color-2);
+            min-width: 40px;
+        }
+        .benefit-item h4 {
+            font-size: 1.2rem;
+            color: var(--white-color);
+            margin-bottom: 0.3rem;
+        }
+        .benefit-item p {
+            font-size: 0.95rem;
+            color: var(--dark-text);
+        }
+
+        /* --- Packages Section --- */
+        #packages {
+            background: var(--secondary-color);
+        }
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .package-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(91, 192, 190, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .package-card.highlight-package { /* For Diamond/Exec */
+             border-color: var(--highlight-color);
+             box-shadow: 0 6px 25px rgba(255, 202, 58, 0.2);
+        }
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(91, 192, 190, 0.2);
+        }
+        .package-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color-2);
+        }
+        .package-card.highlight-package .icon {
+             color: var(--highlight-color);
+        }
+        .package-card h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--white-color);
+        }
+        .package-card .price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--highlight-color);
+            margin-bottom: 1.5rem;
+        }
+        .package-card ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        .package-card li {
+            margin-bottom: 0.7rem;
+            color: var(--light-text);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+        }
+         .package-card li i {
+            color: var(--accent-color-2);
+            margin-right: 10px;
+            font-size: 1.1em;
+            min-width: 15px; /* Ensure alignment */
+         }
+         .package-card .note {
+             font-size: 0.85rem;
+             color: var(--dark-text);
+             font-style: italic;
+             margin-top: 1rem;
+         }
+         .popular-badge {
+            position: absolute;
+            top: 15px;
+            right: -40px;
+            background: var(--highlight-color);
+            color: var(--primary-color);
+            padding: 5px 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transform: rotate(45deg);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+         }
+
+        /* --- Growth Potential Section --- */
+        #growth-potential {
+            background: linear-gradient(rgba(11, 19, 43, 0.95), rgba(11, 19, 43, 0.95)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover; /* Tech/Network background */
+            background-attachment: fixed; /* Parallax effect */
+        }
+        .growth-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            text-align: center;
+        }
+        .growth-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem 1rem;
+            border-radius: 8px;
+            border: 1px solid rgba(91, 192, 190, 0.15);
+            transition: background-color 0.3s ease;
+        }
+        .growth-item:hover {
+             background: rgba(91, 192, 190, 0.1);
+        }
+        .growth-item h4 { /* Level */
+            font-size: 1.1rem;
+            color: var(--accent-color-2);
+            margin-bottom: 0.5rem;
+        }
+        .growth-item p { /* Earnings */
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--highlight-color);
+            margin-bottom: 0.3rem;
+        }
+        .growth-item .detail { /* People count */
+            font-size: 0.9rem;
+            color: var(--dark-text);
+        }
+
+        /* --- Passive Income Section --- */
+        .passive-income-content {
+            text-align: center;
+        }
+        .passive-income-content .icon {
+            font-size: 4rem;
+            color: var(--highlight-color);
+            margin-bottom: 1.5rem;
+            display: block; /* Center icon */
+             text-shadow: 0 0 15px rgba(255, 202, 58, 0.4);
+        }
+        .passive-income-content h3 {
+            font-size: 2rem;
+            color: var(--white-color);
+            margin-bottom: 1rem;
+        }
+        .passive-income-content p {
+            font-size: 1.2rem;
+            color: var(--light-text);
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+        }
+        .passive-income-content .emphasis {
+            font-weight: 700;
+            color: var(--accent-color-2);
+        }
+
+        /* --- Testimonial Section --- */
+        #testimonial {
+            background: var(--secondary-color);
+        }
+        .testimonial-box {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+             border-left: 5px solid var(--highlight-color);
+        }
+        .testimonial-box blockquote {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--light-text);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding: 0 2rem;
+        }
+        .testimonial-box blockquote::before,
+        .testimonial-box blockquote::after {
+            content: '"';
+            font-size: 3rem;
+            color: var(--accent-color-2);
+            position: absolute;
+            opacity: 0.5;
+        }
+        .testimonial-box blockquote::before { top: -10px; left: 0; }
+        .testimonial-box blockquote::after { bottom: -20px; right: 0; }
+
+        .testimonial-box .author {
+            font-weight: 600;
+            color: var(--highlight-color);
+            font-size: 1.1rem;
+        }
+
+        /* --- Final CTA / Footer --- */
+        footer {
+            background: var(--primary-color);
+            padding: 4rem 0;
+            text-align: center;
+            border-top: 3px solid var(--accent-color-2);
+            margin-top: 3rem;
+        }
+        footer h2 {
+            font-size: 2.5rem;
+            color: var(--white-color);
+            margin-bottom: 1.5rem;
+        }
+        footer p {
+            color: var(--dark-text);
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- Responsiveness --- */
+        @media (max-width: 992px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero .subtitle { font-size: 1.1rem; }
+            .section-title { font-size: 2.3rem; }
+            .referrer-pic-wrapper { width: 120px; height: 120px; }
+            .referrer-details h3 { font-size: 1.5rem; }
+            .referrer-details p { font-size: 1rem; }
+             #why-tgr .grid { grid-template-columns: 1fr; text-align: center; }
+             #why-tgr .illustration { order: -1; margin-bottom: 2rem; } /* Image first on mobile */
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .section-title { font-size: 2rem; }
+            .section-subtitle { font-size: 1.1rem; }
+            .feature-grid { grid-template-columns: 1fr; }
+            .packages-grid { grid-template-columns: 1fr; }
+            .benefits-grid { grid-template-columns: 1fr; }
+             .level-step { flex-direction: column; align-items: center; text-align: center; gap: 1rem; }
+             .level-step .level-icon { padding-top: 0; margin-bottom: 0.5rem; }
+             .growth-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+             .growth-item p { font-size: 1.2rem;}
+             footer h2 { font-size: 2rem; }
+        }
+
+        @media (max-width: 576px) {
+             body { line-height: 1.6; }
+            .hero { padding: 4rem 0 3rem 0; }
+            .hero h1 { font-size: 1.8rem; }
+            .hero .subtitle { font-size: 1rem; }
+            .tgr-logo { max-width: 150px; }
+            .referrer-pic-wrapper { width: 100px; height: 100px; }
+            .referrer-details h3 { font-size: 1.3rem; }
+            .section-title { font-size: 1.8rem; }
+            .section-subtitle { font-size: 1rem; }
+            .cta-button { padding: 0.8rem 1.8rem; font-size: 1rem; width: 90%; max-width: 300px; } /* Stack buttons */
+             .level-content h3 { font-size: 1.4rem; }
+             .level-content .calculation { font-size: 1rem; }
+             .growth-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+             .testimonial-box blockquote { font-size: 1.1rem; padding: 0 0.5rem; }
+             footer h2 { font-size: 1.8rem; }
+        }
+
+         /* --- Utility --- */
+         .hidden { display: none; }
+         .text-highlight { color: var(--highlight-color); }
+         .text-accent { color: var(--accent-color-2); }
+         .text-success { color: var(--success-color); }
+         .font-bold { font-weight: 700; }
+
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <!-- TGR Logo -->
+            <img src="https://www.topupandgetreward.com/images/logo.png" alt="Top Up and Get Reward Logo" class="tgr-logo"> <!-- Update path if needed -->
+
+            <!-- Referrer Info (Dynamic) -->
+            <div class="referrer-info" id="referrer-section">
+                <div class="referrer-pic-wrapper">
+                    <img src="https://i.imgur.com/P92E8Wr.jpg" alt="Referrer Picture" class="referrer-pic" id="referrer-img"> <!-- Placeholder -->
+                </div>
+                <div class="referrer-details">
+                    <h3 id="referrer-name">Your Guide</h3> <!-- Placeholder -->
+                    <p id="referrer-phone"><i class="fas fa-phone-alt"></i> Contact Me</p> <!-- Placeholder -->
+                </div>
+            </div>
+
+            <h1>Stop Spending on Airtime & Data, Start <span>Earning Millions</span> With It!</h1>
+            <p class="subtitle">Every day, Nigerians spend BILLIONS on recharges. What if you could turn that expense into a lifelong income source? Top Up and Get Reward (TGR) makes it possible, even starting with just ₦2,500!</p>
+
+            <div class="cta-container">
+                <a href="#register" class="cta-button primary register-link" id="cta-hero-register">
+                    <i class="fas fa-rocket"></i> Yes! Start My TGR Journey NOW!
+                </a>
+                <a href="https://www.youtube.com/watch?v=4zTEeEyGrY4" target="_blank" class="cta-button secondary" id="cta-hero-how-to-pay">
+                    <i class="fab fa-youtube"></i> How to Pay for Registration?
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Why TGR? The Problem & Solution -->
+        <section id="why-tgr">
+            <div class="container">
+                <h2 class="section-title">Are You Tired of Financial Struggle?</h2>
+                <p class="section-subtitle">In today's economy, making ends meet is tougher than ever. Prices rise, but incomes often don't keep up. Meanwhile, you spend thousands yearly on essential mobile airtime and data, enriching giant corporations. What if there was a way to reclaim that money and build real wealth?</p>
+                <div class="grid">
+                    <div class="text-content">
+                        <h3>The <span class="text-highlight">₦21 TRILLION</span> Telecom Goldmine You're Missing Out On!</h3>
+                        <p>Nigeria's telecom industry is booming, generating trillions annually. NCC reports over 250 million active SIMs and 3 million recharges EVERY HOUR!</p>
+                        <p>Imagine earning just a tiny fraction of that massive cash flow... TGR gives YOU that power.</p>
+                        <h3>TGR: Your Bridge to Financial Freedom</h3>
+                        <p>Top Up and Get Reward (TGR) is a legitimate, NCC-licensed Nigerian company (RC: 1505794) founded in 2018 by Mr. Adesayo Samuel Babatunde (FCA). We provide a platform for YOU to earn commissions and bonuses simply by doing what you already do – recharging your phone, paying bills – and sharing this opportunity with others.</p>
+                        <p>Stop being just a consumer. Become an <span class="text-accent font-bold">EARNER</span> in the telecom revolution!</p>
+                    </div>
+                    <div class="illustration">
+                        <img src="https://i.imgur.com/slrK1ny.jpg" alt="Financial Freedom Illustration"> <!-- Replace with a relevant image https://i.imgur.com/WgQwcb1.jpg -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What is TGR? Features & Legitimacy -->
+        <section id="what-is-tgr">
+            <div class="container">
+                <h2 class="section-title">What Makes TGR Different?</h2>
+                <p class="section-subtitle">TGR isn't just another app. It's a powerful wealth-building system designed for sustainability and YOUR success. We're recognized for impacting lives, even receiving commendation from the former Minister of Communication.</p>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                        <h4>Legitimate & Stable</h4>
+                        <p>CAC Registered (RC: 1505794), NCC Licensed. Operating strongly since 2018.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h4>Essential Services</h4>
+                        <p>Earn from Airtime, Data, Cable TV, Electricity Bills – services everyone uses daily.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon"><i class="fas fa-wallet"></i></div>
+                        <h4>Instant Payouts</h4>
+                        <p>Earn commissions per second and withdraw directly to your bank account anytime.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon"><i class="fas fa-users"></i></div>
+                        <h4>Powerful Compensation</h4>
+                        <p>Earn direct, indirect, and passive income + amazing incentives (Cars, Trips, House Fund).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The ₦2,500 Pearl Mini Plan -->
+        <section id="pearl-mini-plan">
+            <div class="container">
+                <h2 class="section-title">Start Your Empire with Just ₦2,500!</h2>
+                <p class="section-subtitle">Think you need huge capital? Think again! Our <span class="text-highlight font-bold">Pearl Mini (₦2,500) Package</span> is designed for EVERYONE – students, housewives, unemployed, retirees, community groups, NGOs. It's your grassroots key to unlocking unimaginable wealth using the "Fantastic 5" strategy.</p>
+
+                <div class="levels-container">
+                    <!-- Level 1 -->
+                    <div class="level-step">
+                        <div class="level-icon"><i class="fas fa-user-plus"></i></div>
+                        <div class="level-content">
+                            <h3><span>Step 1:</span> Recruit Your 'Fantastic 5'</h3>
+                            <p>Start with ₦2,500. Find 5 motivated people (friends, family, colleagues) to join with ₦2,500 each.</p>
+                            <div class="calculation">
+                                Your Direct Commission: ₦522.50 × 5 = <span class="result">₦2,612.50</span>
+                            </div>
+                            <div class="what-next">
+                                BOOM! You've recovered your initial cost! Upgrade to Pearl (₦5k) & keep ₦112.50!
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Level 2 -->
+                    <div class="level-step">
+                        <div class="level-icon"><i class="fas fa-users"></i></div>
+                        <div class="level-content">
+                            <h3><span>Step 2:</span> Your Team Duplicates</h3>
+                            <p>Teach your 5 to get their own 5 (25 new people on Level 2).</p>
+                            <div class="calculation">
+                                Your Level 2 Commission: ₦118.75 × 25 = <span class="result">₦2,968.75</span>
+                            </div>
+                             <!-- Add Upgrade Commission from Level 1 -->
+                            <div class="calculation">
+                                L1 Upgrade Comm. (to ₦5k): ₦522.50 x 5 = <span class="result">₦2,612.50</span>
+                            </div>
+                            <div class="what-next">
+                                Total Earned: ₦5,581.25. Upgrade to Coral (₦10k) & keep ₦581.25!
+                                <p class="upgrade-note">Upgrading unlocks deeper earning levels!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Level 3 -->
+                    <div class="level-step">
+                        <div class="level-icon"><i class="fas fa-sitemap"></i></div>
+                        <div class="level-content">
+                            <h3><span>Step 3:</span> Deeper Growth</h3>
+                            <p>Your 25 Level 2 members each bring 5 (125 new people on Level 3).</p>
+                            <div class="calculation">
+                                Your Earnings: ₦118.75 × 125 people = <span class="result">₦14,843.75</span> 
+                            </div>
+                             <div class="what-next">
+                                Easily Upgrade to Emerald (₦20k) & pocket the difference!
+                                <p class="upgrade-note">Higher packages earn MORE from the SAME downline activity!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Level 4 & Beyond -->
+                     <div class="level-step">
+                        <div class="level-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="level-content">
+                            <h3><span>Step 4+:</span> Exponential Explosion!</h3>
+                            <p>As duplication continues (Level 4 = 625 people, Level 5 = 3,125...), your earnings skyrocket, especially after upgrading to Diamond (₦50k) or Executive Diamond (₦100k) to unlock all 10 levels of commission!</p>
+                            <div class="what-next">
+                                This simple ₦2,500 start, combined with teamwork and strategic upgrades, is the path to <span class="text-highlight">MILLIONS</span>.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- START: New Button Code -->
+                <div class="cta-container" style="margin-top: 2.5rem; margin-bottom: 1rem;"> <!-- Added margin for spacing -->
+                    <a href="#" id="learn-more-pearl-mini-link" class="cta-button secondary" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-book-open"></i> See Full 'Pearl Mini ₦2,500 Fantastic 5' Plan!
+                    </a>
+                </div>
+                <!-- END: New Button Code -->
+
+                 <div class="cta-container">
+                     <a href="#register" class="cta-button primary register-link">
+                         <i class="fas fa-check-circle"></i> I'm Ready! Let's Start with ₦2,500!
+                     </a>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Full TGR Benefits -->
+        <section id="benefits">
+            <div class="container">
+                <h2 class="section-title">Unlock a Floodgate of Benefits</h2>
+                <p class="section-subtitle">Joining TGR opens up multiple streams of income and rewards, rewarding you for personal use and team building.</p>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="icon"><i class="fas fa-percent"></i></div>
+                        <div><h4>Personal Cashback</h4><p>Get 2-2.5% on Airtime/Data, 0.5% on Cable TV, 1% on Electricity Bills for your OWN use.</p></div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="icon"><i class="fas fa-user-plus"></i></div>
+                        <div><h4>Direct Referral Bonus (22%)</h4><p>Earn ₦522 to ₦20,900 instantly when you register someone directly.</p></div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="icon"><i class="fas fa-users"></i></div>
+                        <div><h4>Indirect Referral Bonus (1.5% - 5%)</h4><p>Earn commissions when your downlines (up to 10 levels deep!) register others.</p></div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="icon"><i class="fas fa-sync-alt"></i></div>
+                        <div><h4>Passive Transaction Bonus</h4><p>Earn 0.1-0.15% from EVERY airtime/data recharge done by your entire team, FOREVER!</p></div>
+                    </div>
+                     <div class="benefit-item">
+                        <div class="icon"><i class="fas fa-trophy"></i></div>
+                        <div><h4>Point Value (PV)</h4><p>Accumulate points from registrations for amazing incentives.</p></div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="icon"><i class="fas fa-gifts"></i></div>
+                        <div><h4>Incentives (₦21.75M+)</h4><p>Qualify for ₦750k Travel Fund, ₦5M Car, ₦6M 2nd Car, ₦10M House Fund + Monthly Leadership Bonuses!</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Packages -->
+        <section id="packages">
+            <div class="container">
+                <h2 class="section-title">Choose Your Path, Upgrade Your Life</h2>
+                <p class="section-subtitle">Start where you're comfortable, especially with Pearl Mini! Remember, upgrading strategically unlocks deeper commission levels and faster wealth accumulation.</p>
+                <div class="packages-grid">
+                    <!-- Pearl Mini -->
+                    <div class="package-card">
+                        <div class="icon"><i class="fas fa-seedling"></i></div>
+                        <h3>Pearl Mini</h3>
+                        <p class="price">₦2,500</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Ideal Starting Point</li>
+                            <li><i class="fas fa-check"></i> Earn from <span class="font-bold">2 Levels</span></li>
+                            <li><i class="fas fa-times"></i> No PV (Upgrade needed)</li>
+                        </ul>
+                        <p class="note">Perfect for students, low-income earners.</p>
+                    </div>
+                     <!-- Coral -->
+                    <div class="package-card">
+                        <div class="icon"><i class="fas fa-leaf"></i></div>
+                        <h3>Coral</h3>
+                        <p class="price">₦10,000</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Earn from <span class="font-bold">6 Levels</span></li>
+                             <li><i class="fas fa-check"></i> PV from <span class="font-bold">Level 1</span></li>
+                             <li><i class="fas fa-check"></i> Good step-up package</li>
+                        </ul>
+                    </div>
+                    <!-- Diamond -->
+                    <div class="package-card highlight-package">
+                        <div class="popular-badge">Popular</div>
+                        <div class="icon"><i class="far fa-gem"></i></div>
+                        <h3>Diamond</h3>
+                        <p class="price">₦50,000</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Earn from <span class="font-bold">10 Levels</span></li>
+                            <li><i class="fas fa-check"></i> PV from <span class="font-bold">5 Levels</span></li>
+                             <li><i class="fas fa-check"></i> Unlock Full Potential</li>
+                            <li><i class="fas fa-check"></i> Faster Incentive Qualification</li>
+                        </ul>
+                         <p class="note">Serious Business Builders Aim Here!</p>
+                    </div>
+                     <!-- Executive Diamond -->
+                    <div class="package-card highlight-package">
+                        <div class="icon"><i class="fas fa-crown"></i></div>
+                        <h3>Executive Diamond</h3>
+                        <p class="price">₦100,000</p>
+                        <ul>
+                             <li><i class="fas fa-check"></i> Earn from <span class="font-bold">10 Levels</span></li>
+                             <li><i class="fas fa-check"></i> PV from <span class="font-bold">5 Levels</span></li>
+                             <li><i class="fas fa-check"></i> Maximize EVERYTHING</li>
+                             <li><i class="fas fa-check"></i> Highest PV generation</li>
+                        </ul>
+                         <p class="note">For Leaders Aiming for the Top!</p>
+                    </div>
+                </div>
+                 <p class="section-subtitle" style="margin-top: 3rem; font-size: 1rem;">Other packages (Pearl ₦5k, Emerald ₦20k, Sapphire ₦30k, Ruby ₦40k) offer intermediate steps. You can upgrade ANYTIME by paying the difference!</p>
+            </div>
+        </section>
+
+        <!-- Exponential Growth Potential -->
+        <section id="growth-potential">
+            <div class="container">
+                 <h2 class="section-title">Imagine the Possibilities...</h2>
+                 <p class="section-subtitle">When your team duplicates using the "Fantastic 5" (or even better, "Fantastic 10") strategy, the growth becomes mind-blowing. Here's the potential REGISTRATION commission starting from Pearl Mini & upgrading strategically (figures approximate):</p>
+                 <div class="growth-grid">
+                     <div class="growth-item"><h4>Level 5</h4><p>~₦111K+</p><span class="detail">3,125 People</span></div>
+                     <div class="growth-item"><h4>Level 6</h4><p>~₦556K+</p><span class="detail">15,625 People</span></div>
+                     <div class="growth-item"><h4>Level 7</h4><p>~₦2.7M+</p><span class="detail">78,125 People</span></div>
+                     <div class="growth-item"><h4>Level 8</h4><p>~₦13.9M+</p><span class="detail">390,625 People</span></div>
+                     <div class="growth-item"><h4>Level 9</h4><p>~₦69.5M+</p><span class="detail">~1.9M People</span></div>
+                     <div class="growth-item"><h4>Level 10</h4><p>~₦347M+</p><span class="detail">~9.7M People</span></div>
+                 </div>
+                 <p class="section-subtitle" style="margin-top: 3rem; font-weight: 600; color: var(--light-text);">Total Potential (Registration Only): <span class="text-highlight font-bold" style="font-size: 1.5em;">Over ₦434 Million!</span> Yes, starting from just ₦2,500!</p>
+            </div>
+        </section>
+
+        <!-- Passive Income Power -->
+        <section id="passive-income">
+             <div class="container passive-income-content">
+                <span class="icon"><i class="fas fa-infinity"></i></span>
+                <h2 class="section-title">The REAL Wealth: Daily Passive Income</h2>
+                <p class="section-subtitle">The millions from registrations are amazing, but the true financial freedom comes from <span class="emphasis">passive income</span>. Every single time someone in your vast network (potentially millions!) buys airtime or data... YOU EARN!</p>
+                <h3>Imagine Earning While You Sleep!</h3>
+                <p>Even if you earn just ₦1 per day from 10% of a large team's recharges, that could be <span class="text-highlight font-bold">TENS or HUNDREDS of THOUSANDS of Naira DAILY</span> flowing into your account, effortlessly, for life!</p>
+                <p>This isn't hype; it's the power of leveraging the daily habits of millions. <span class="text-highlight font-bold">Nigerian BANKS have proven that this works.</span> This is the legacy income you can build for your family.</p>
+                 <div class="cta-container">
+                     <a href="#register" class="cta-button primary register-link">
+                         <i class="fas fa-money-bill-wave"></i> Build My Passive Income Stream!
+                     </a>
+                 </div>
+            </div>
+        </section>
+
+         <!-- Testimonial Snippet -->
+        <section id="testimonial">
+            <div class="container">
+                <h2 class="section-title">Real People, Real Success</h2>
+                 <p class="section-subtitle">Don't just take our word for it. Hear from successful TGR members:</p>
+                 <div class="testimonial-box">
+                     <blockquote>
+                         "I started TGR... made my first 1 million Naira within 60 days... earned over 30 million, got multiple cars... TGR compensated me for all my past network marketing struggles. The product (airtime/data) is what everyone MUST use. Just put in a fraction of the effort you put elsewhere, and you will blow! This is the easiest, most sustainable way to build wealth."
+                     </blockquote>
+                     <p class="author">- Alhaja Toyyibat Adeosun (TGR Ambassador & Queen)</p> <!-- Example, replace if needed -->
+                 </div>                
+            </div>
+        </section>
+
+        <!-- Final Call to Action -->
+        <footer id="register">
+            <div class="container">
+                <h2>Your Future Starts <span class="text-highlight">NOW</span>. Don't Wait Another Day!</h2>
+                <p>Stop letting your daily expenses drain your wallet. Turn them into your biggest asset with TGR. Whether you're a student, a CEO, a community leader, or anyone who uses a phone – this opportunity is for YOU.</p>
+                <p style="font-weight: 600; color: var(--white-color);">Join the TGR movement today. Click below to register using the referral details of the person who shared this with you!</p>
+                 <div class="cta-container">
+                    <a href="#" class="cta-button primary register-link" id="cta-footer-register"> <!-- Href will be set by JS -->
+                        <i class="fas fa-user-plus"></i> Register Under <span id="cta-referrer-name">Me</span> Now!
+                    </a>
+                     <a href="https://www.youtube.com/watch?v=4zTEeEyGrY4" target="_blank" class="cta-button secondary" id="cta-footer-how-to-pay">
+                         <i class="fab fa-youtube"></i> Watch How to Pay Video
+                     </a>
+                 </div>
+                 <p style="margin-top: 3rem; font-size: 0.9rem; color: var(--dark-text);">&copy; <span id="current-year">2026</span> Top Up and Get Reward Ltd. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // Find the span element by its ID
+            const yearElement = document.getElementById('current-year');
+
+            // Get the current year
+            const currentYear = new Date().getFullYear();
+
+            // Update the text content of the span element if it exists
+            if (yearElement) {
+                yearElement.textContent = currentYear;
+            }
+
+            // Base URL for registration
+            const baseUrl = 'https://www.topupandgetreward.com/register?referralid=';
+            const defaultReferralId = 'DefaultID'; // Fallback ID if none provided
+            const defaultName = 'Your Guide';
+            const defaultPhone = 'Contact Me';
+            const defaultPic = 'https://via.placeholder.com/150/0b132b/ffffff?text=TGR'; // Placeholder image URL
+
+            // Get URL parameters
+            const params = new URLSearchParams(window.location.search);
+            const referralId = params.get('ref') || defaultReferralId;
+            const referrerName = params.get('name') ? decodeURIComponent(params.get('name').replace(/\+/g, ' ')) : defaultName;
+            const referrerPhone = params.get('phone') ? decodeURIComponent(params.get('phone').replace(/\+/g, ' ')) : defaultPhone;
+            const referrerPicUrl = params.get('pic') || defaultPic;
+
+            // Base URL for the "Learn More About Pearl Mini Fantastic 5" page
+            const learnMoreBaseUrl = 'https://dammieoptimus.github.io/tgrmillionswithpearlmini?ref='; // Added this line
+
+            // --- Update Referrer Information ---
+            const referrerSection = document.getElementById('referrer-section');
+            const referrerImgEl = document.getElementById('referrer-img');
+            const referrerNameEl = document.getElementById('referrer-name');
+            const referrerPhoneEl = document.getElementById('referrer-phone');
+            const ctaReferrerNameEl = document.getElementById('cta-referrer-name');
+
+            if (referrerImgEl) {
+                referrerImgEl.src = referrerPicUrl;
+                referrerImgEl.alt = `${referrerName}'s Picture`; // Improve alt text
+                 // Optional: Hide image container if using default placeholder URL and you prefer not to show it
+                // if (referrerPicUrl === defaultPic) {
+                //     referrerImgEl.closest('.referrer-pic-wrapper').style.display = 'none';
+                // }
+            }
+             if (referrerNameEl) {
+                referrerNameEl.textContent = referrerName;
+            }
+            if (referrerPhoneEl) {
+                 // Format phone number link
+                 const phoneLink = referrerPhone.replace(/\D/g, ''); // Remove non-digits
+                 referrerPhoneEl.innerHTML = `<i class="fas fa-phone-alt"></i> <a href="tel:${phoneLink}" style="color: inherit; text-decoration: none;">${referrerPhone}</a>`;
+                 // If phone is just the default text, don't make it a link
+                 if(referrerPhone === defaultPhone) {
+                    referrerPhoneEl.innerHTML = `<i class="fas fa-info-circle"></i> ${defaultPhone}`;
+                 }
+            }
+            if (ctaReferrerNameEl) {
+                 // Use only the first name for the button if available
+                 const firstName = referrerName.split(' ')[0];
+                 ctaReferrerNameEl.textContent = (firstName && firstName !== 'Your') ? firstName : 'Me';
+            }
+
+            // Hide the whole referrer section if no custom info is provided (optional)
+            // if (referralId === defaultReferralId && referrerName === defaultName && referrerPhone === defaultPhone && referrerPicUrl === defaultPic) {
+            //    if (referrerSection) referrerSection.classList.add('hidden');
+            // }
+
+            // --- Update Registration Links ---
+            const registrationLinks = document.querySelectorAll('.register-link');
+            const fullReferralLink = baseUrl + encodeURIComponent(referralId);
+
+            registrationLinks.forEach(link => {
+                link.href = fullReferralLink;
+                 // Add target="_blank" to open in new tab
+                link.target = "_blank";
+                 link.rel = "noopener noreferrer"; // Security best practice
+            });
+
+            // --- START: Update "Learn More About Pearl Mini Fantastic 5" Button Link ---
+            const learnMoreButton = document.getElementById('learn-more-pearl-mini-link');
+            if (learnMoreButton) {
+                const fullLearnMoreLink = learnMoreBaseUrl + encodeURIComponent(referralId);
+                learnMoreButton.href = fullLearnMoreLink;
+                console.log(`Learn More About Pearl Mini Fantastic 5 Link: ${fullLearnMoreLink}`); // For debugging
+            }
+            // --- END: Update "Learn More" Button Link ---
+
+            // --- Smooth Scrolling for Internal Links ---
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    // Don't prevent default for actual registration links
+                    if (this.classList.contains('register-link')) {
+                        return;
+                    }
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                         targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            console.log(`Page loaded for Referrer ID: ${referralId}`);
+            console.log(`Referrer Name: ${referrerName}`);
+            console.log(`Referrer Phone: ${referrerPhone}`);
+            console.log(`Referrer Picture URL: ${referrerPicUrl}`);
+            console.log(`Registration Link: ${fullReferralLink}`);
+        });
+    </script>
+
+</body>
+</html>
