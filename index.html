@@ -845,6 +845,12 @@
                     <a href="#" id="learn-more-pearl-mini-link" class="cta-button secondary" target="_blank" rel="noopener noreferrer">
                         <i class="fas fa-book-open"></i> See the Full 'Pearl Mini ₦2,500 Fantastic 5' Plan!
                     </a>
+
+                    <!-- START: New Fantastic 10 Button -->
+                    <a href="#" id="fantastic-ten-link" class="cta-button secondary" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-rocket"></i> Explore the Full 'Coral ₦10k Fantastic 10' Plan!
+                    </a>
+                    <!-- END: New Fantastic 10 Button -->
                 </div>
                 <!-- END: New Button Code -->
 
@@ -1043,8 +1049,11 @@
                 yearElement.textContent = currentYear;
             }
 
-            // Base URL for registration
+            // Base URLs
             const baseUrl = 'https://www.topupandgetreward.com/register?referralid=';
+            const learnMoreBaseUrl = 'https://dammieoptimus.github.io/tgrmillionswithpearlmini?ref=';
+            const fantasticTenBaseUrl = 'https://dammieoptimus.github.io/fantasticten/'; // Base for Fantastic 10
+            
             const defaultReferralId = 'DefaultID'; // Fallback ID if none provided
             const defaultName = 'Your Guide';
             const defaultPhone = 'Contact Me';
@@ -1056,9 +1065,6 @@
             const referrerName = params.get('name') ? decodeURIComponent(params.get('name').replace(/\+/g, ' ')) : defaultName;
             const referrerPhone = params.get('phone') ? decodeURIComponent(params.get('phone').replace(/\+/g, ' ')) : defaultPhone;
             const referrerPicUrl = params.get('pic') || defaultPic;
-
-            // Base URL for the "Learn More About Pearl Mini Fantastic 5" page
-            const learnMoreBaseUrl = 'https://dammieoptimus.github.io/tgrmillionswithpearlmini?ref='; // Added this line
 
             // --- Update Referrer Information ---
             const referrerSection = document.getElementById('referrer-section');
@@ -1117,6 +1123,21 @@
                 console.log(`Learn More About Pearl Mini Fantastic 5 Link: ${fullLearnMoreLink}`); // For debugging
             }
             // --- END: Update "Learn More" Button Link ---
+
+            // --- START: Update "Fantastic 10" Button Link ---
+            const fantasticTenButton = document.getElementById('fantastic-ten-link');
+            if (fantasticTenButton) {
+                // Encode the parameters separately
+                const encodedName = encodeURIComponent(referrerName);
+                const encodedRefId = encodeURIComponent(referralId);
+        
+                // Construct the full link with parameters
+                const fullFantasticTenLink = `${fantasticTenBaseUrl}?teamName=${encodedName}&referralID=${encodedRefId}`;
+        
+                fantasticTenButton.href = fullFantasticTenLink;
+                console.log(`Fantastic 10 for 10k Link: ${fullFantasticTenLink}`); // For debugging
+            }
+            // --- END: Update "Fantastic 10" Button Link ---
 
             // --- Smooth Scrolling for Internal Links ---
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
