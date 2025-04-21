@@ -957,6 +957,19 @@
             </div>
         </section>
 
+        <!-- START: Compensation Plan Button Section -->
+        <section id="compensation-plan-cta"
+            style="padding-top: 1rem; padding-bottom: 2rem; background-color: var(--secondary-color);">
+            <!-- Simple wrapper section, match package section background -->
+            <div class="container cta-container">
+                <a href="#" id="compensation-plan-link" class="cta-button secondary" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fas fa-file-invoice-dollar"></i> View Detailed Compensation Plan
+                </a>
+            </div>
+        </section>
+        <!-- END: Compensation Plan Button Section -->
+
         <!-- Exponential Growth Potential -->
         <section id="growth-potential">
             <div class="container">
@@ -1053,6 +1066,8 @@
             const baseUrl = 'https://www.topupandgetreward.com/register?referralid=';
             const learnMoreBaseUrl = 'https://dammieoptimus.github.io/tgrmillionswithpearlmini?ref=';
             const fantasticTenBaseUrl = 'https://dammieoptimus.github.io/fantasticten/'; // Base for Fantastic 10
+            // Relative path for Compensation Plan page
+            const compensationPlanPage = 'tgrcompensationplan.html'; // Just the filename
             
             const defaultReferralId = 'DefaultID'; // Fallback ID if none provided
             const defaultName = 'Your Guide';
@@ -1138,6 +1153,17 @@
                 console.log(`Fantastic 10 for 10k Link: ${fullFantasticTenLink}`); // For debugging
             }
             // --- END: Update "Fantastic 10" Button Link ---
+
+            // --- START: Update Compensation Plan Button Link ---
+            const compensationPlanButton = document.getElementById('compensation-plan-link');
+            if (compensationPlanButton) {
+                const encodedRefId = encodeURIComponent(referralId); // Use the already fetched referralId
+                const fullCompensationPlanLink = `${compensationPlanPage}?ref=${encodedRefId}`;
+        
+                compensationPlanButton.href = fullCompensationPlanLink;
+                console.log(`Compensation Plan Link: ${fullCompensationPlanLink}`); // For debugging
+            }
+            // --- END: Update Compensation Plan Button Link ---
 
             // --- Smooth Scrolling for Internal Links ---
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
