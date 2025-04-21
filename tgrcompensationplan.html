@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGR Compensation Plan: Your Blueprint to Financial Freedom</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --primary-color: #0a192f;
+            /* Deep Navy Blue */
+            --secondary-color: #64ffda;
+            /* Bright Teal/Aqua */
+            --accent-color: #ffd700;
+            /* Gold */
+            --light-color: #ccd6f6;
+            /* Light Blue/Grey */
+            --dark-grey: #8892b0;
+            /* Darker Grey */
+            --white: #ffffff;
+            --success-green: #28a745;
+            --danger-red: #dc3545;
+            --info-blue: #17a2b8;
+            --card-bg: rgba(23, 42, 69, 0.85);
+            /* Slightly more opaque card background */
+            --card-border: rgba(100, 255, 218, 0.15);
+            --bg-gradient: linear-gradient(145deg, #0a192f 0%, #112240 50%, #172a45 100%);
+            --box-shadow-light: rgba(0, 0, 0, 0.2);
+            --box-shadow-hover: rgba(100, 255, 218, 0.2);
+            --font-primary: 'Poppins', sans-serif;
+            --font-secondary: 'Roboto', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--bg-gradient);
+            color: var(--light-color);
+            line-height: 1.7;
+            overflow-x: hidden;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+
+        /* --- Top Logo Section --- */
+        .top-logo-container {
+            text-align: center;
+            /* Center the inline-block link/image */
+            padding: 25px 0 15px 0;
+            /* Add space above and below the logo */
+            background-color: var(--primary-color);
+            /* Match the dark background */
+            /* Or use: background: transparent; if you want body gradient */
+        }
+
+        #top-logo {
+            /* Style the image itself */
+            height: 60px;
+            /* Adjust desired logo height */
+            width: auto;
+            /* Maintain aspect ratio */
+            vertical-align: middle;
+            /* Good practice for images in links */
+        }
+
+        /* --- Ensure Body Padding is Removed --- */
+        body {
+            /* Make sure NO padding-top is applied here for the navbar */
+            /* padding-top: 65px; <--- REMOVE OR COMMENT OUT THIS LINE */
+
+            /* ... other existing body styles (font, background, etc.) ... */
+            font-family: var(--font-primary);
+            background: var(--bg-gradient);
+            color: var(--light-color);
+            line-height: 1.7;
+            overflow-x: hidden;
+            font-size: 16px;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.95)), url('https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80') no-repeat center center/cover;
+            /* Placeholder - replace with high-quality relevant image */
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 5rem 2rem;
+            border-bottom: 5px solid var(--secondary-color);
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 25px 25px;
+            opacity: 0.2;
+            z-index: 0;
+        }
+
+        .hero h1,
+        .hero p {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            color: var(--accent-color);
+        }
+
+        .hero .subtitle {
+            font-size: 1.4rem;
+            color: var(--light-color);
+            max-width: 800px;
+            margin-bottom: 2rem;
+            margin-left: auto;      /* Add this */
+            margin-right: auto;     /* Add this */
+            font-weight: 300;
+        }
+
+        /* --- General Section Styling --- */
+        section {
+            padding: 5rem 0;
+        }
+
+        section:nth-child(even) {
+            background-color: rgba(23, 42, 69, 0.4);
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 5px;
+            background: var(--accent-color);
+            border-radius: 3px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--dark-grey);
+            margin-bottom: 3.5rem;
+            max-width: 850px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- Why TGR / Market Potential --- */
+        #why-tgr .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            background: var(--card-bg);
+            padding: 2rem 1.5rem;
+            border-radius: 10px;
+            border-left: 5px solid var(--accent-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px var(--box-shadow-light);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px var(--box-shadow-hover);
+        }
+
+        .stat-item i {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .stat-item .value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item .label {
+            font-size: 1rem;
+            color: var(--dark-grey);
+        }
+
+        /* --- How You Earn Overview --- */
+        #how-earn .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .benefit-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid var(--card-border);
+            transition: background-color 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            background-color: rgba(100, 255, 218, 0.1);
+        }
+
+        .benefit-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .benefit-card h3 {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-bottom: 0.8rem;
+        }
+
+        .benefit-card p {
+            font-size: 0.95rem;
+            color: var(--light-color);
+        }
+
+        /* --- Registration Packages --- */
+        #packages .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .package-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            border: 1px solid var(--card-border);
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 20px var(--box-shadow-light);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px var(--box-shadow-hover);
+        }
+
+        .package-card .package-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .package-card .icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Specific Package Colors/Icons */
+        .package-card.pearl-mini .icon {
+            color: #e0e0e0;
+        }
+
+        /* Light Grey */
+        .package-card.pearl .icon {
+            color: #f5f5f5;
+        }
+
+        /* Off White */
+        .package-card.coral .icon {
+            color: #ff7f50;
+        }
+
+        /* Coral */
+        .package-card.emerald .icon {
+            color: #2ecc71;
+        }
+
+        /* Emerald Green */
+        .package-card.sapphire .icon {
+            color: #3498db;
+        }
+
+        /* Sapphire Blue */
+        .package-card.ruby .icon {
+            color: #e74c3c;
+        }
+
+        /* Ruby Red */
+        .package-card.diamond .icon {
+            color: #b9f2ff;
+        }
+
+        /* Diamond Blueish */
+        .package-card.exec-diamond .icon {
+            color: var(--accent-color);
+        }
+
+        /* Gold */
+
+        .package-card h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .package-card .price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .package-card ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .package-card li {
+            margin-bottom: 0.8rem;
+            color: var(--light-color);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .package-card li i {
+            color: var(--secondary-color);
+            margin-right: 10px;
+            margin-top: 4px;
+            font-size: 0.9em;
+        }
+
+        .package-card .highlight {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .package-card .caveat {
+            color: var(--dark-grey);
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        .package-card .bonus-info {
+            background-color: rgba(10, 25, 47, 0.7);
+            padding: 0.8rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border: 1px solid var(--card-border);
+            text-align: center;
+        }
+
+        .package-card .bonus-info span {
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        /* --- Earning Streams Detailed --- */
+        .earning-section {
+            margin-bottom: 4rem;
+        }
+
+        .earning-title {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .earning-description {
+            color: var(--light-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .commission-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px var(--box-shadow-light);
+        }
+
+        .commission-table th,
+        .commission-table td {
+            padding: 1rem 1.2rem;
+            text-align: left;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .commission-table th {
+            background-color: rgba(100, 255, 218, 0.1);
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        .commission-table td {
+            color: var(--light-color);
+        }
+
+        .commission-table td .highlight {
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+
+        .commission-table td .secondary-highlight {
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        .commission-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .note {
+            font-size: 0.9rem;
+            color: var(--dark-grey);
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        /* --- PV System & Incentives --- */
+        #incentives .incentives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .incentive-card {
+            background: linear-gradient(135deg, var(--card-bg), rgba(23, 42, 69, 0.95));
+            padding: 2.5rem 2rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid var(--card-border);
+            border-top: 5px solid var(--accent-color);
+            box-shadow: 0 5px 25px var(--box-shadow-light);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .incentive-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 35px var(--box-shadow-hover);
+        }
+
+        .incentive-card .icon {
+            font-size: 3.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .incentive-card h3 {
+            font-size: 1.5rem;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .incentive-card .pv-required {
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .incentive-card .reward {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .incentive-card .type {
+            font-size: 1rem;
+            color: var(--dark-grey);
+        }
+
+        .pv-explanation {
+            background: rgba(10, 25, 47, 0.8);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 3rem;
+            border-left: 5px solid var(--secondary-color);
+            font-size: 1.05rem;
+        }
+
+        .pv-explanation strong {
+            color: var(--accent-color);
+        }
+
+        /* --- Illustrative Scenarios --- */
+        .scenario-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .scenario-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .scenario-card .level-details {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px dashed var(--dark-grey);
+        }
+
+        .scenario-card .level-details strong {
+            color: var(--accent-color);
+        }
+
+        .scenario-card .total-potential {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-top: 1rem;
+        }
+
+        .scenario-card .disclaimer {
+            font-size: 0.85rem;
+            color: var(--dark-grey);
+            margin-top: 1.5rem;
+            font-style: italic;
+        }
+
+        /* --- Testimonials --- */
+        #testimonials .testimonial-card {
+            background: rgba(10, 25, 47, 0.8);
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 5px solid var(--accent-color);
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px var(--box-shadow-light);
+        }
+
+        .testimonial-card blockquote {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--light-color);
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 2.5rem;
+        }
+
+        .testimonial-card blockquote::before {
+            content: "\f10d";
+            /* Font Awesome quote-left */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            opacity: 0.5;
+        }
+
+        .testimonial-card .author {
+            font-weight: 600;
+            color: var(--secondary-color);
+            text-align: right;
+            margin-top: 1rem;
+        }
+
+        .testimonial-card .author span {
+            font-weight: 400;
+            color: var(--dark-grey);
+            font-size: 0.9rem;
+        }
+
+        /* --- FAQ Section using <details>/<summary> --- */
+        #faq .faq-item {
+            /* Style the <details> element */
+            background: var(--card-bg);
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--card-border);
+            overflow: hidden;
+            /* Optional: ensures consistency */
+        }
+
+        #faq .faq-question {
+            /* Style the <summary> element */
+            padding: 1.2rem 1.5rem;
+            background: rgba(100, 255, 218, 0.08);
+            color: var(--white);
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            /* Use flex to position icon */
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            /* Hide default marker */
+            width: 100%;
+            /* Ensure summary takes full width */
+        }
+
+        #faq .faq-question::-webkit-details-marker {
+            /* Hide default marker for Chrome/Safari */
+            display: none;
+        }
+
+        #faq .faq-icon {
+            /* Style the custom icon */
+            transition: transform 0.3s ease;
+            margin-left: 10px;
+            /* Add some space */
+        }
+
+        #faq .faq-item[open]>summary .faq-icon {
+            /* Rotate icon when open */
+            transform: rotate(180deg);
+        }
+
+        #faq .faq-answer-content {
+            /* Style the container for the answer */
+            padding: 1.5rem;
+            color: var(--light-color);
+            line-height: 1.7;
+            /* Ensure good readability */
+            background: var(--card-bg);
+            /* Match background or make slightly different */
+            border-top: 1px solid var(--card-border);
+            /* Add separator */
+        }
+
+        /* Remove old .faq-answer styling if it exists */
+        /* Ensure no max-height or overflow:hidden is applied to .faq-answer-content */
+
+        /* --- Call to Action (Footer) --- */
+        footer {
+            background: var(--primary-color);
+            padding: 5rem 0 3rem 0;
+            text-align: center;
+            border-top: 5px solid var(--secondary-color);
+            margin-top: 3rem;
+        }
+
+        footer h2 {
+            font-size: 2.5rem;
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+
+        footer p {
+            color: var(--light-color);
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--secondary-color), #36D1DC);
+            color: var(--primary-color);
+            padding: 1.2rem 3rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 20px rgba(100, 255, 218, 0.5);
+        }
+
+        .cta-button i {
+            margin-right: 12px;
+            font-size: 1.1em;
+            vertical-align: middle;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05) translateY(-3px);
+            box-shadow: 0 10px 30px rgba(100, 255, 218, 0.7);
+        }
+
+        .footer-links {
+            margin-top: 3rem;
+        }
+
+        .footer-links a {
+            color: var(--dark-grey);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .copyright {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: var(--dark-grey);
+        }
+
+        /* --- Utilities & Responsive --- */
+        .text-accent {
+            color: var(--accent-color);
+        }
+
+        .text-secondary {
+            color: var(--secondary-color);
+        }
+
+        .text-success {
+            color: var(--success-green);
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .mb-1 {
+            margin-bottom: 1rem;
+        }
+
+        .mt-1 {
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .section-title {
+                font-size: 2.4rem;
+            }
+
+            .packages-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 15px;
+            }
+
+            .hero {
+                min-height: 60vh;
+                padding: 4rem 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            section {
+                padding: 4rem 0;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .section-subtitle {
+                font-size: 1.1rem;
+            }
+
+            #why-tgr .stats-grid,
+            #how-earn .benefits-grid,
+            #incentives .incentives-grid {
+                grid-template-columns: 1fr;
+            }
+
+            #packages .packages-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .commission-table th,
+            .commission-table td {
+                padding: 0.8rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .earning-title {
+                font-size: 1.6rem;
+            }
+
+            footer h2 {
+                font-size: 2rem;
+            }
+
+            .cta-button {
+                font-size: 1.2rem;
+                padding: 1rem 2.5rem;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+            }
+
+            .package-card h3 {
+                font-size: 1.5rem;
+            }
+
+            .package-card .price {
+                font-size: 1.8rem;
+            }
+
+            .package-card li {
+                font-size: 0.9rem;
+            }
+
+            .earning-title {
+                font-size: 1.4rem;
+            }
+
+            .cta-button {
+                font-size: 1.1rem;
+                padding: 0.8rem 2rem;
+            }
+
+            .footer-links a {
+                margin: 0 0.5rem;
+                display: block;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section>.container>*:not(.section-title):not(.section-subtitle) {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0;
+            /* Start hidden */
+        }
+
+        /* Stagger for grids */
+        .packages-grid>*,
+        .stats-grid>*,
+        .benefits-grid>*,
+        .incentives-grid>*,
+        .faq-item {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        /* Simple stagger delays */
+        .packages-grid>*:nth-child(1),
+        .stats-grid>*:nth-child(1),
+        .benefits-grid>*:nth-child(1),
+        .incentives-grid>*:nth-child(1),
+        .faq-item:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .packages-grid>*:nth-child(2),
+        .stats-grid>*:nth-child(2),
+        .benefits-grid>*:nth-child(2),
+        .incentives-grid>*:nth-child(2),
+        .faq-item:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .packages-grid>*:nth-child(3),
+        .stats-grid>*:nth-child(3),
+        .benefits-grid>*:nth-child(3),
+        .incentives-grid>*:nth-child(3),
+        .faq-item:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .packages-grid>*:nth-child(4),
+        .stats-grid>*:nth-child(4),
+        .benefits-grid>*:nth-child(4),
+        .incentives-grid>*:nth-child(4),
+        .faq-item:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .packages-grid>*:nth-child(5),
+        .incentives-grid>*:nth-child(5),
+        .faq-item:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        .packages-grid>*:nth-child(6),
+        .incentives-grid>*:nth-child(6),
+        .faq-item:nth-child(6) {
+            animation-delay: 0.6s;
+        }
+
+        .packages-grid>*:nth-child(7),
+        .faq-item:nth-child(7) {
+            animation-delay: 0.7s;
+        }
+
+        .packages-grid>*:nth-child(8),
+        .faq-item:nth-child(8) {
+            animation-delay: 0.8s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- START: Top Logo -->
+    <div class="top-logo-container">
+        <a href="#"> <!-- Link to top (#) or homepage -->
+            <img src="https://www.topupandgetreward.com/images/logo.png" alt="Top Up and Get Reward Logo"
+                id="top-logo">
+            <!-- IMPORTANT: Replace the placeholder 'src' above with the actual URL of the TGR logo -->
+        </a>
+    </div>
+    <!-- END: Top Logo -->
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>The Official <span class="text-secondary">TGR</span> Compensation Plan</h1>
+            <p class="subtitle">Unlock Your Path to Financial Freedom. Discover how Top-Up and Get Reward empowers you
+                to earn significantly from everyday expenses and build lasting wealth through the booming Telecoms
+                industry.</p>
+            <a href="#packages" class="cta-button"
+                style="background: var(--accent-color); color: var(--primary-color); font-size: 1.2rem; padding: 1rem 2.5rem; position: relative; z-index: 1;">
+                <i class="fas fa-arrow-down"></i> Explore Packages
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Why TGR / Market Potential -->
+        <section id="why-tgr">
+            <div class="container">
+                <h2 class="section-title">Why Top-Up and Get Reward?</h2>
+                <p class="section-subtitle">Nigeria's Telecoms sector is a multi-trillion Naira industry. Millions
+                    recharge daily. TGR gives YOU a share of this massive wealth, turning your everyday mobile usage and
+                    network into a powerful income stream. Led by CEO Adesayo Samuel Babatunde (FCA) and established in
+                    2018, TGR is a registered (RC: 1505794), NCC-licensed, and proven platform for financial growth.</p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <div class="value">250M+</div>
+                        <div class="label">Active SIM Cards (NCC)</div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-hourglass-half"></i>
+                        <div class="value">3 Million+</div>
+                        <div class="label">Recharges Every Hour</div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-wallet"></i>
+                        <div class="value">₦14 Billion+</div>
+                        <div class="label">Spent Daily on Recharges</div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="value">₦21 Trillion+</div>
+                        <div class="label">Annual Telecoms Investment</div>
+                    </div>
+                </div>
+                <p class="section-subtitle" style="margin-top: 3rem; font-size: 1.1rem;">Imagine earning even a tiny
+                    fraction of this activity... TGR makes it possible!</p>
+            </div>
+        </section>
+
+        <!-- How You Earn Overview -->
+        <section id="how-earn">
+            <div class="container">
+                <h2 class="section-title">Multiple Ways to Earn with TGR</h2>
+                <p class="section-subtitle">TGR offers a diverse range of income streams, rewarding you for personal
+                    usage, sharing the opportunity, and building a team.</p>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="icon"><i class="fas fa-hand-holding-dollar"></i></div>
+                        <h3>Personal Cashback</h3>
+                        <p>Save money instantly! Get 2-2.5% back on your Airtime/Data, 0.5% on Cable TV, and 1% on
+                            Electricity Bills.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="icon"><i class="fas fa-user-plus"></i></div>
+                        <h3>Direct Referral Bonus</h3>
+                        <p>Earn a substantial 22% commission (less 5% fee) instantly when you personally register new
+                            members.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="icon"><i class="fas fa-sitemap"></i></div>
+                        <h3>Indirect Referral Bonus</h3>
+                        <p>Earn commissions (1.5% - 5%) when your team members register others, down multiple levels.
+                        </p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Team Transaction Bonus</h3>
+                        <p>Earn residual income (0.1% - 0.15%) every time someone in your team recharges Airtime, Data,
+                            Cable TV.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="icon"><i class="fas fa-star"></i></div>
+                        <h3>Point Value (PV)</h3>
+                        <p>Accumulate Points from team registrations (depending on your package) towards amazing
+                            incentives.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="icon"><i class="fas fa-trophy"></i></div>
+                        <h3>Leadership Incentives</h3>
+                        <p>Unlock huge rewards like Trips, Cars, and House Funds (₦21M+ total) as your team grows.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Packages -->
+        <section id="packages">
+            <div class="container">
+                <h2 class="section-title">Choose Your Path to Success</h2>
+                <p class="section-subtitle">Select the package that aligns with your goals and budget. You can always
+                    upgrade later to unlock deeper earning potential. Higher packages offer commissions from more levels
+                    and PV accumulation.</p>
+                <div class="packages-grid">
+                    <!-- Pearl Mini -->
+                    <div class="package-card pearl-mini">
+                        <div class="package-header">
+                            <div class="icon"><i class="fas fa-seedling"></i></div>
+                            <h3>Pearl Mini</h3>
+                            <p class="price">₦2,500</p>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Ideal Starting Point</li>
+                            <li><i class="fas fa-layer-group"></i>Earn Commissions: <span class="highlight">2
+                                    Levels</span></li>
+                            <li><i class="fas fa-times"></i>Point Value (PV) Earned: <span class="caveat">None</span>
+                            </li>
+                        </ul>
+                        <div class="bonus-info">Reg. Bonus: <span>₦250</span> | Sponsor Earns: <span>5 PV*</span></div>
+                    </div>
+                    <!-- Pearl -->
+                    <div class="package-card pearl">
+                        <div class="package-header">
+                            <div class="icon"><i class="far fa-gem"></i></div>
+                            <h3>Pearl</h3>
+                            <p class="price">₦5,000</p>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Student/Entry Package</li>
+                            <li><i class="fas fa-layer-group"></i>Earn Commissions: <span class="highlight">5
+                                    Levels</span></li>
+                            <li><i class="fas fa-times"></i>Point Value (PV) Earned: <span class="caveat">None</span>
+                            </li>
+                        </ul>
+                        <div class="bonus-info">Reg. Bonus: <span>₦500</span> | Sponsor Earns: <span>10 PV*</span></div>
+                    </div>
+                    <!-- Coral -->
+                    <div class="package-card coral">
+                        <div class="package-header">
+                            <div class="icon"><i class="fas fa-water"></i></div>
+                            <h3>Coral</h3>
+                            <p class="price">₦10,000</p>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Business Builder Start</li>
+                            <li><i class="fas fa-layer-group"></i>Earn Commissions: <span class="highlight">6
+                                    Levels</span></li>
+                            <li><i class="fas fa-star"></i>Earn PV From: <span class="highlight">Level 1</span></li>
+                        </ul>
+                        <div class="bonus-info">Reg. Bonus: <span>₦1,000</span> | Sponsor Earns: <span>20 PV*</span>
+                        </div>
+                    </div>
+                    <!-- Emerald -->
+                    <div class="package-card emerald">
+                        <div class="package-header">
+                            <div class="icon"><i class="fas fa-gem"></i></div>
+                            <h3>Emerald</h3>
+                            <p class="price">₦20,000</p>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Growing Your Business</li>
+                            <li><i class="fas fa-layer-group"></i>Earn Commissions: <span class="highlight">7
+                                    Levels</span></li>
+                            <li><i class="fas fa-star"></i>Earn PV From: <span class="highlight">Levels 1-2</span></li>
+                        </ul>
+                        <div class="bonus-info">Reg. Bonus: <span>₦2,000</span> | Sponsor Earns: <span>40 PV*</span>
+                        </div>
+                    </div>
+                    <!-- Sapphire -->
+                    <div class="package-card sapphire">
+                        <div class="package-header">
+                            <div class="icon"><i class="fas fa-gem" style="color:#3498db;"></i></div>
+                            <!-- Inline color for specific gem -->
+                            <h3>Sapphire</h3>
+                            <p class="price">₦30,000</p>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Serious Income Potential</li>
+                            <li><i class="fas fa-layer-group"></i>Earn Commissions: <span class="highlight">8
+                                    Levels</span></li>
+                            <li><i class="fas fa-star"></i>Earn PV From: <span class="highlight">Levels 1-3</span></li>
+                        </ul>
+                        <div class="bonus-info">Reg. Bonus: <span>₦3,000</span> | Sponsor Earns: <span>60 PV*</span>
+                        </div>
+                    </div>
+                    <!-- Ruby -->
+                    <div class="package-card ruby">
+                        <div class="package-header">
+                            <div class="icon"><i class="fas fa-gem" style="color:#e74c3c;"></i></div>
+                            <!-- Inline color for specific gem -->
+                            <h3>Ruby</h3>
+                            <p class="price">₦40,000</p>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Accelerated Growth</li>
+                            <li><i class="fas fa-layer-group"></i>Earn Commissions: <span class="highlight">9
+                                    Levels</span></li>
+                            <li><i class="fas fa-star"></i>Earn PV From: <span class="highlight">Levels 1-4</span></li>
+                        </ul>
+                        <div class="bonus-info">Reg. Bonus: <span>₦4,000</span> | Sponsor Earns: <span>80 PV*</span>
+                        </div>
+                    </div>
+                    <!-- Diamond -->
+                    <div class="package-card diamond">
+                        <div class="package-header">
+                            <div class="icon"><i class="fas fa-diamond"></i></div>
+                            <h3>Diamond</h3>
+                            <p class="price">₦50,000</p>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Maximum Earning Depth</li>
+                            <li><i class="fas fa-layer-group"></i>Earn Commissions: <span class="highlight">10
+                                    Levels</span></li>
+                            <li><i class="fas fa-star"></i>Earn PV From: <span class="highlight">Levels 1-5</span></li>
+                        </ul>
+                        <div class="bonus-info">Reg. Bonus: <span>₦5,000</span> | Sponsor Earns: <span>100 PV*</span>
+                        </div>
+                    </div>
+                    <!-- Executive Diamond -->
+                    <div class="package-card exec-diamond">
+                        <div class="package-header">
+                            <div class="icon"><i class="fas fa-crown"></i></div>
+                            <h3>Executive Diamond</h3>
+                            <p class="price">₦100,000</p>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Elite Status & Earnings</li>
+                            <li><i class="fas fa-layer-group"></i>Earn Commissions: <span class="highlight">10
+                                    Levels</span></li>
+                            <li><i class="fas fa-star"></i>Earn PV From: <span class="highlight">Levels 1-5</span></li>
+                        </ul>
+                        <div class="bonus-info">Reg. Bonus: <span>₦10,000</span> | Sponsor Earns: <span>200 PV*</span>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="note" style="text-align: center; margin-top: 2rem;">*Sponsor earns PV instantly upon direct
+                    registration, provided their own package qualifies them to earn PV.</p>
+            </div>
+        </section>
+
+        <!-- Earning Streams Detailed -->
+        <section id="earnings-detail">
+            <div class="container">
+                <h2 class="section-title">Deep Dive into Your Earnings</h2>
+                <p class="section-subtitle">Understand exactly how each commission and bonus works. TGR offers
+                    transparency and rewarding payouts for your efforts.</p>
+
+                <!-- Personal Usage Cashback -->
+                <div class="earning-section">
+                    <h3 class="earning-title"><i class="fas fa-wallet text-secondary"></i> Personal Usage Cashback</h3>
+                    <p class="earning-description">Get immediate discounts every time you use your TGR portal for
+                        personal needs or to serve customers.</p>
+                    <table class="commission-table">
+                        <thead>
+                            <tr>
+                                <th>Service</th>
+                                <th>Cashback Rate</th>
+                                <th>Example (₦1,000 Purchase)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Airtime Top-up</td>
+                                <td class="secondary-highlight">2.0% - 2.5%</td>
+                                <td>You get ₦20 - ₦25 back</td>
+                            </tr>
+                            <tr>
+                                <td>Data Purchase</td>
+                                <td class="secondary-highlight">2.0% - 2.5%</td>
+                                <td>You get ₦20 - ₦25 back</td>
+                            </tr>
+                            <tr>
+                                <td>Cable TV (DSTv, GOtv, Startimes)</td>
+                                <td class="secondary-highlight">0.5%</td>
+                                <td>You get ₦5 back (+ service charge to customer)</td>
+                            </tr>
+                            <tr>
+                                <td>Electricity Bill (PHCN)</td>
+                                <td class="secondary-highlight">1.0%</td>
+                                <td>You get ₦10 back (+ service charge to customer)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="note">Rates may vary slightly. This represents direct savings or profit when serving
+                        others.</p>
+                </div>
+
+                <!-- Direct Referral Commissions -->
+                <div class="earning-section">
+                    <h3 class="earning-title"><i class="fas fa-user-plus text-secondary"></i> Direct Referral Commission
+                        (Level 1)</h3>
+                    <p class="earning-description">Earn <span class="highlight">22%</span> of the registration fee
+                        instantly (after a 5% company maintenance fee) when you personally sponsor a new member.</p>
+                    <table class="commission-table">
+                        <thead>
+                            <tr>
+                                <th>Package Referred</th>
+                                <th>Registration Fee</th>
+                                <th>Your Instant Earning (Approx.)</th>
+                                <th>PV You Gain*</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pearl Mini</td>
+                                <td>₦2,500</td>
+                                <td class="highlight">₦522.50</td>
+                                <td class="secondary-highlight">5 PV</td>
+                            </tr>
+                            <tr>
+                                <td>Pearl</td>
+                                <td>₦5,000</td>
+                                <td class="highlight">₦1,045</td>
+                                <td class="secondary-highlight">10 PV</td>
+                            </tr>
+                            <tr>
+                                <td>Coral</td>
+                                <td>₦10,000</td>
+                                <td class="highlight">₦2,090</td>
+                                <td class="secondary-highlight">20 PV</td>
+                            </tr>
+                            <tr>
+                                <td>Emerald</td>
+                                <td>₦20,000</td>
+                                <td class="highlight">₦4,180</td>
+                                <td class="secondary-highlight">40 PV</td>
+                            </tr>
+                            <tr>
+                                <td>Sapphire</td>
+                                <td>₦30,000</td>
+                                <td class="highlight">₦6,270</td>
+                                <td class="secondary-highlight">60 PV</td>
+                            </tr>
+                            <tr>
+                                <td>Ruby</td>
+                                <td>₦40,000</td>
+                                <td class="highlight">₦8,360</td>
+                                <td class="secondary-highlight">80 PV</td>
+                            </tr>
+                            <tr>
+                                <td>Diamond</td>
+                                <td>₦50,000</td>
+                                <td class="highlight">₦10,450</td>
+                                <td class="secondary-highlight">100 PV</td>
+                            </tr>
+                            <tr>
+                                <td>Executive Diamond</td>
+                                <td>₦100,000</td>
+                                <td class="highlight">₦20,900</td>
+                                <td class="secondary-highlight">200 PV</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="note">*You gain these Point Values if your own package allows PV earning. Example: A Coral
+                        member sponsoring a Diamond earns ₦10,450 and 100 PV.</p>
+                </div>
+
+                <!-- Indirect Referral Commissions -->
+                <div class="earning-section">
+                    <h3 class="earning-title"><i class="fas fa-sitemap text-secondary"></i> Indirect Referral
+                        Commissions (Levels 2-10)</h3>
+                    <p class="earning-description">Earn passively as your team grows! Get commissions when members
+                        sponsored by your downlines register new people. The depth you earn from depends on YOUR
+                        package.</p>
+                    <table class="commission-table">
+                        <thead>
+                            <tr>
+                                <th>Level</th>
+                                <th>Commission %</th>
+                                <th>Approx. Earning (₦10k Coral Reg.)</th>
+                                <th>Eligible Packages</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Level 2</td>
+                                <td>5%</td>
+                                <td class="highlight">₦475</td>
+                                <td>All Packages</td>
+                            </tr>
+                            <tr>
+                                <td>Level 3</td>
+                                <td>5%</td>
+                                <td class="highlight">₦475</td>
+                                <td>Pearl, Coral, Emerald, Sapphire, Ruby, Diamond, Exec Diamond</td>
+                            </tr>
+                            <tr>
+                                <td>Level 4</td>
+                                <td>2.5%</td>
+                                <td class="highlight">₦237.50</td>
+                                <td>Pearl, Coral, Emerald, Sapphire, Ruby, Diamond, Exec Diamond</td>
+                            </tr>
+                            <tr>
+                                <td>Level 5</td>
+                                <td>1.5%</td>
+                                <td class="highlight">₦142.50</td>
+                                <td>Pearl, Coral, Emerald, Sapphire, Ruby, Diamond, Exec Diamond</td>
+                            </tr>
+                            <tr>
+                                <td>Level 6</td>
+                                <td>1.5%</td>
+                                <td class="highlight">₦142.50</td>
+                                <td>Coral, Emerald, Sapphire, Ruby, Diamond, Exec Diamond</td>
+                            </tr>
+                            <tr>
+                                <td>Level 7</td>
+                                <td>1.5%</td>
+                                <td class="highlight">₦142.50</td>
+                                <td>Emerald, Sapphire, Ruby, Diamond, Exec Diamond</td>
+                            </tr>
+                            <tr>
+                                <td>Level 8</td>
+                                <td>1.5%</td>
+                                <td class="highlight">₦142.50</td>
+                                <td>Sapphire, Ruby, Diamond, Exec Diamond</td>
+                            </tr>
+                            <tr>
+                                <td>Level 9</td>
+                                <td>1.5%</td>
+                                <td class="highlight">₦142.50</td>
+                                <td>Ruby, Diamond, Exec Diamond</td>
+                            </tr>
+                            <tr>
+                                <td>Level 10</td>
+                                <td>1.5%</td>
+                                <td class="highlight">₦142.50</td>
+                                <td>Diamond, Exec Diamond</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="note">Percentages are applied to the registration fee, and then a 5% maintenance fee is
+                        deducted. Your package determines the maximum level you earn from (e.g., Coral earns up to Level
+                        6).</p>
+                </div>
+
+                <!-- Team Transaction Commissions (VTU Bonus) -->
+                <div class="earning-section">
+                    <h3 class="earning-title"><i class="fas fa-network-wired text-secondary"></i> Team Transaction
+                        Commissions (VTU Bonus)</h3>
+                    <p class="earning-description">This is the power of residual income! Earn small percentages every
+                        time anyone in your downline network (up to your eligible levels) performs a transaction. These
+                        small amounts multiply massively with a large team.</p>
+                    <table class="commission-table">
+                        <thead>
+                            <tr>
+                                <th>Transaction Type</th>
+                                <th>Commission Rate</th>
+                                <th>Example (₦1,000 Team Member Purchase)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Airtime / Data Purchase</td>
+                                <td class="secondary-highlight">0.10% - 0.15%</td>
+                                <td>You earn ₦1.00 - ₦1.50</td>
+                            </tr>
+                            <tr>
+                                <td>Cable TV</td>
+                                <td class="secondary-highlight">0.10%</td>
+                                <td>You earn ₦1.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="note">Imagine thousands of team members recharging daily! Even ₦1 per person adds up
+                        significantly. The depth you earn from depends on your package (up to 10 levels for Diamond/Exec
+                        Diamond).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Point Value (PV) System & Incentives -->
+        <section id="incentives">
+            <div class="container">
+                <h2 class="section-title">Accumulate PV for Massive Incentives</h2>
+                <p class="section-subtitle">Point Value (PV) is earned from registrations within your eligible team
+                    levels (based on your package). PV accumulates over time (never wiped!) and qualifies you for
+                    incredible lifestyle rewards.</p>
+                <div class="pv-explanation">
+                    <p><i class="fas fa-star text-accent"></i> You earn PV when someone registers within the levels your
+                        package allows PV gain from. (e.g., Emerald earns PV from Level 1 & 2 registrations, Diamond
+                        from Levels 1-5).</p>
+                    <p><i class="fas fa-arrow-up text-accent"></i> Higher packages allow you to earn PV from deeper
+                        levels, accelerating your incentive qualification.</p>
+                    <p><i class="fas fa-infinity text-accent"></i> Your total PV keeps growing as your team expands – it
+                        never resets!</p>
+                </div>
+
+                <div class="incentives-grid">
+                    <div class="incentive-card">
+                        <div class="icon"><i class="fas fa-calendar-alt"></i></div>
+                        <h3>Leadership Bonus</h3>
+                        <div class="pv-required">10,000 Fresh PV (Monthly)</div>
+                        <div class="reward">₦120,000</div>
+                        <div class="type">Monthly Bonus</div>
+                    </div>
+                    <div class="incentive-card">
+                        <div class="icon"><i class="fas fa-plane-departure"></i></div>
+                        <h3>Int'l Trip Fund</h3>
+                        <div class="pv-required">25,000 Total PV</div>
+                        <div class="reward">₦750,000</div>
+                        <div class="type">Travel Incentive</div>
+                    </div>
+                    <div class="incentive-card">
+                        <div class="icon"><i class="fas fa-car"></i></div>
+                        <h3>Car Fund 1</h3>
+                        <div class="pv-required">100,000 Total PV</div>
+                        <div class="reward">₦5,000,000</div>
+                        <div class="type">First Car Award</div>
+                    </div>
+                    <div class="incentive-card">
+                        <div class="icon"><i class="fas fa-car-side"></i></div>
+                        <h3>Car Fund 2</h3>
+                        <div class="pv-required">250,000 Total PV</div>
+                        <div class="reward">₦6,000,000</div>
+                        <div class="type">Second Car Award</div>
+                    </div>
+                    <div class="incentive-card">
+                        <div class="icon"><i class="fas fa-home"></i></div>
+                        <h3>House Fund</h3>
+                        <div class="pv-required">500,000 Total PV</div>
+                        <div class="reward">₦10,000,000</div>
+                        <div class="type">Housing Award</div>
+                    </div>
+                    <div class="incentive-card" style="border-top-color: var(--success-green);">
+                        <div class="icon" style="color: var(--success-green);"><i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h3>Total Potential</h3>
+                        <div class="pv-required">All Incentives Combined</div>
+                        <div class="reward">₦21,750,000+</div>
+                        <div class="type">Total Incentive Value</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Illustrative Scenarios -->
+        <section id="scenarios">
+            <div class="container">
+                <h2 class="section-title">Illustrative Earning Potential</h2>
+                <p class="section-subtitle">See the power of duplication! These examples show potential earnings based
+                    on
+                    specific team-building strategies. Your results depend on your effort and team activity.</p>
+
+                <!-- Scenario 1: Pearl Mini Start & Upgrade -->
+                <!-- Scenario 1: Pearl Mini Start & Upgrade (Extended) -->
+                <div class="scenario-card">
+                    <h3>Scenario 1: The "Fantastic 5" Upgrade Path (Starting with ₦2,500 Pearl Mini)</h3>
+                    <p>This shows how a small start can lead to significant growth by recruiting 5 active members,
+                        strategically
+                        upgrading using commissions, and benefiting from team duplication, earning commissions based on
+                        the
+                        initial ₦2,500 registrations cascading down.</p>
+                    <div class="level-details mt-1">
+                        <strong>Level 1 (You bring 5 x ₦2,500):</strong> Earn <span class="text-accent">~₦2,612</span>.
+                        Use
+                        earnings to upgrade to ₦5k Pearl.
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 2 (25 new members x ₦2,500):</strong> Earn <span
+                            class="text-accent">~₦2,969</span>
+                        (Indirect). Total accumulated allows upgrade to ₦10k Coral.
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 3 (125 new members x ₦2,500):</strong> Earn <span
+                            class="text-accent">~₦14,844</span>.
+                        Upgrade to ₦20k Emerald.
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 4 (625 new members x ₦2,500):</strong> Earn <span
+                            class="text-accent">~₦37,109</span>.
+                        Upgrade to ₦50k Diamond! Now eligible for commissions up to Level 10.
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 5 (3,125 new members x ₦2,500):</strong> Earn <span
+                            class="text-accent">~₦111,344</span>
+                        (at 1.5% rate on Diamond).
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 6 (15,625 new members x ₦2,500):</strong> Earn <span
+                            class="text-accent">~₦556,719</span>.
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 7 (78,125 new members x ₦2,500):</strong> Earn <span
+                            class="text-accent">~₦2,783,594</span>.
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 8 (390,625 new members x ₦2,500):</strong> Earn <span
+                            class="text-accent">~₦13,917,969</span>.
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 9 (1,953,125 new members x ₦2,500):</strong> Earn <span
+                            class="text-accent">~₦69,589,844</span>.
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 10 (9,765,625 new members x ₦2,500):</strong> Earn <span
+                            class="text-accent">~₦347,949,219</span>.
+                    </div>
+                    <p class="total-potential" style="font-size: 1.3rem;">Total Potential (Levels 1-10 from initial
+                        ₦2.5k
+                        signups): Over ₦434 Million!</p>
+                    <p class="mt-1"><strong>Outcome:</strong> By starting small (₦2,500) and consistently applying the
+                        "Fantastic 5" strategy with upgrades, you unlock the full commission depth, leading to massive
+                        potential
+                        earnings just from the initial wave of registrations.</p>
+                    <p class="disclaimer">This calculation is illustrative, assuming perfect duplication (everyone
+                        brings 5) and
+                        that earnings shown are solely based on the <span class="font-bold">initial ₦2,500 registration
+                            fee</span> cascading down each level. It does <span class="font-bold">not</span> include
+                        potential
+                        additional commissions from downlines upgrading their packages or VTU bonuses, which would
+                        further
+                        increase earnings. Actual results depend heavily on team activity and individual effort.</p>
+                </div>
+
+                <!-- Scenario 2: Fantastic 10 - Coral Package -->
+                <div class="scenario-card">
+                    <h3>Scenario 2: The "Fantastic 10" Power Plan (Starting with ₦10,000 Coral)</h3>
+                    <p>Focusing on building depth with the Coral package. You bring 10, who each bring 10, down to 6
+                        levels
+                        (Coral's commission depth).</p>
+                    <div class="level-details mt-1">
+                        <strong>Level 1 (You bring 10):</strong> Earn <span class="text-accent">₦20,900</span> | Gain
+                        200 PV
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 2 (100 members):</strong> Earn <span class="text-accent">₦47,500</span> | PV: 0
+                        (Need
+                        upgrade for L2 PV)
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 3 (1,000 members):</strong> Earn <span class="text-accent">₦475,000</span> | PV: 0
+                        (Need
+                        upgrade for L3 PV)
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 4 (10,000 members):</strong> Earn <span class="text-accent">₦2,375,000</span> |
+                        PV: 0
+                        (Need upgrade for L4 PV)
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 5 (100,000 members):</strong> Earn <span class="text-accent">₦14,250,000</span> |
+                        PV: 0
+                        (Need upgrade for L5 PV)
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 6 (1,000,000 members):</strong> Earn <span class="text-accent">₦142,500,000</span>
+                        | PV: 0
+                    </div>
+                    <p class="total-potential">Total Potential Registration Earnings (Levels 1-6): Over ₦159 Million!
+                    </p>
+                    <p class="mt-1"><strong>Key Insight:</strong> Demonstrates massive earning potential from
+                        registrations
+                        alone. Upgrading strategically unlocks PV incentives and earnings beyond Level 6.</p>
+                    <p class="disclaimer">This is a theoretical calculation assuming perfect duplication (everyone
+                        registers 10
+                        with the Coral package). Real-world results will vary based on individual and team performance.
+                        Does not
+                        include VTU bonuses or upgrade commissions.</p>
+                </div>
+
+                <!-- Scenario 3: Fantastic 20 - Pearl Package -->
+                <div class="scenario-card">
+                    <h3>Scenario 3: The "Fantastic 20" Acceleration (Starting with ₦5,000 Pearl)</h3>
+                    <p>This scenario explores the potential with the ₦5,000 Pearl package, where you and each team
+                        member aim to recruit 20 people, all joining with the ₦5,000 Pearl package. Calculations are
+                        shown up to Level 5, the maximum commission depth for Pearl.</p>
+                    <div class="level-details mt-1">
+                        <strong>Level 1 (You bring 20 x ₦5,000):</strong> Earn <span
+                            class="text-accent">~₦20,900</span>. (Sponsor gains 10 PV per registration if eligible, but
+                        you earn 0 PV here).
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 2 (400 new members x ₦5,000):</strong> Earn <span
+                            class="text-accent">~₦95,000</span> (at 5% rate). You earn 0 PV.
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 3 (8,000 new members x ₦5,000):</strong> Earn <span
+                            class="text-accent">~₦1,900,000</span> (at 5% rate). You earn 0 PV.
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 4 (160,000 new members x ₦5,000):</strong> Earn <span
+                            class="text-accent">~₦19,000,000</span> (at 2.5% rate). You earn 0 PV.
+                    </div>
+                    <div class="level-details">
+                        <strong>Level 5 (3,200,000 new members x ₦5,000):</strong> Earn <span
+                            class="text-accent">~₦228,000,000</span> (at 1.5% rate). You earn 0 PV.
+                    </div>
+                    <p class="total-potential" style="font-size: 1.3rem;">Total Potential (Levels 1-5 from ₦5k signups):
+                        Over ₦249 Million!</p>
+                    <p class="mt-1"><strong>Key Insight:</strong> Demonstrates significant earning potential even on the
+                        Pearl package with aggressive recruitment (Fantastic 20). However, earnings are capped at Level
+                        5, and <span class="font-bold">no Point Value (PV) is accumulated</span> towards incentives with
+                        the Pearl package itself. Upgrading is crucial to unlock earnings beyond Level 5 and qualify for
+                        incentives.</p>
+                    <p class="disclaimer">This is a theoretical calculation assuming perfect duplication (everyone
+                        brings 20) and that earnings shown are solely based on the <span class="font-bold">initial
+                            ₦5,000 registration fee</span> cascading down each level. It does <span
+                            class="font-bold">not</span> include potential additional commissions from downlines
+                        upgrading or VTU bonuses. Actual results depend heavily on team activity and individual effort.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" style="background: var(--primary-color);">
+            <div class="container">
+                <h2 class="section-title">Real Success Stories</h2>
+                <p class="section-subtitle">Hear from members who are transforming their lives with TGR. Their
+                    experiences highlight the power and potential of this opportunity.</p>
+
+                <div class="testimonial-card">
+                    <blockquote>
+                        I started TGR 4 years ago... I made my first 1 million Naira within 60 days... The effort we put
+                        in product-based or ROI businesses, just put 10% of that effort here, you will blow... It's the
+                        cheapest business to start... The product is what everybody must use... I made over 30 million
+                        Naira, got my 6 million Naira car incentive... Any networker not into telecommunication is
+                        wasting technology and time... TGR is stable, convenient, cheap, and the easiest to do.
+                    </blockquote>
+                    <p class="author">Alhaja Toyyibat Adeosun (TGR Queen) <span>(Adapted from Voice Note to
+                            Networkers)</span></p>
+                </div>
+
+                <div class="testimonial-card">
+                    <blockquote>
+                        TGR is not just about earning; it's about impacting lives... Build a system now, and in 5-10
+                        years, enjoy financial freedom... This sector can never be saturated or expired... The money
+                        government makes from Telecoms is huge; TGR gives you a piece of the cake... Don't remain
+                        ignorant; make money from your transactions... TGR is not ROI or Ponzi; we compensate based on
+                        activity... I joined in 2020, and today it's a 360° turnaround.
+                    </blockquote>
+                    <p class="author">Akeem Oyeleye (Mindset Coach) <span>(Adapted from Intro Video)</span></p>
+                </div>
+                <!-- Add more testimonials if available -->
+            </div>
+        </section>
+
+
+        <!-- FAQ Section using <details> and <summary> -->
+        <section id="faq">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Got questions? We've got answers. Click on a question to reveal the answer.
+                </p>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        What is Top-Up and Get Reward (TGR)?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer-content">
+                        <p>TGR LTD is a registered Nigerian company (RC: 1505794) offering a VTU (Virtual Top-Up)
+                            platform. It allows members to earn cashback on personal usage (Airtime, Data, Cable TV,
+                            Electricity) and commissions/bonuses by sharing the platform and building a team.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        Who is the CEO?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer-content">
+                        <p>The CEO is Mr. Adesayo Samuel Babatunde, FCA (Fellow Chartered Accountant).</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        Is TGR Legitimate and Registered?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer-content">
+                        <p>Yes, TGR LTD is fully registered with the Corporate Affairs Commission (CAC) with RC number
+                            1505794. It is also verified by FIRS and licensed by the NCC (Nigerian Communications
+                            Commission).</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        How much does it cost to join?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer-content">
+                        <p>Registration itself is free, but your account needs to be activated by choosing a package.
+                            Activation packages range from ₦2,500 (Pearl Mini) to ₦100,000 (Executive Diamond).</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        Do I have to refer people to earn?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer-content">
+                        <p>No. You can earn cashback (2%-2.5%) simply by using the platform for your own recharges and
+                            bill payments, or by selling VTU services to others. However, referring others unlocks
+                            significantly higher earning potential through commissions and incentives.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        What is PV (Point Value)?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer-content">
+                        <p>PV is Point Value. You earn PV when new members register in your downline (within the levels
+                            eligible for your package). PV accumulates over time and qualifies you for leadership
+                            incentives like trips, cars, and house funds.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        Can I upgrade my package later?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer-content">
+                        <p>Yes, you can start with any package and upgrade to a higher one at any time by paying the
+                            difference. Upgrading unlocks deeper commission levels and PV earning potential.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        How do I withdraw my earnings?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer-content">
+                        <p>You can withdraw your earnings directly to your registered local bank account from your TGR
+                            e-wallet. Withdrawals are typically processed quickly (often within minutes). You can also
+                            use your earnings to fund your VTU wallet or transfer to other TGR members.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        Is there a monthly fee or renewal?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer-content">
+                        <p>No, the package activation fee is a one-time payment. There are no compulsory monthly fees or
+                            renewal costs.</p>
+                    </div>
+                </details>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer CTA -->
+    <footer>
+        <div class="container">
+            <h2>Ready to Transform Your Finances with TGR?</h2>
+            <p>Stop just spending on essential services – start EARNING from them! Join thousands of Nigerians building
+                wealth with Top-Up and Get Reward. Click below to register using your referrer's ID and begin your
+                journey today!</p>
+            <a href="https://www.topupandgetreward.com/register?referralid=DammieOptimus2" class="cta-button"
+                id="referralButton" target="_blank" title="Register for TopUpAndGetReward">
+                <i class="fas fa-rocket"></i> Register & Activate Your TGR Account Now!
+            </a>
+            <div class="footer-links">
+                <a href="https://www.topupandgetreward.com" target="_blank">TGR Website</a>
+                <a href="#packages">View Packages</a>
+                <a href="#earnings-detail">Earning Details</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> Top-Up and Get Reward Ltd. All Rights Reserved.</p>
+            <p class="note" style="font-size: 0.8rem; max-width: 600px; margin: 1rem auto 0 auto;">Disclaimer: Earnings
+                in TGR are based on individual effort, sales, and team building activities. The examples shown are
+                illustrative and do not guarantee income. Success requires dedication and work.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for dynamic elements -->
+    <script>
+        // Dynamic Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Dynamic Referral Link Handling
+        document.addEventListener('DOMContentLoaded', function () {
+            const defaultReferralId = 'DammieOptimus2'; // Default if no 'ref' param
+            const baseUrl = 'https://www.topupandgetreward.com/register?referralid=';
+            const referralButton = document.getElementById('referralButton');
+            const params = new URLSearchParams(window.location.search);
+            const referralId = params.get('ref'); // Use ?ref=xxxx in the URL
+
+            if (referralId && referralButton) {
+                referralButton.href = baseUrl + encodeURIComponent(referralId);
+                console.log('Referral link updated to:', referralButton.href);
+            } else if (referralButton) {
+                referralButton.href = baseUrl + encodeURIComponent(defaultReferralId); // Use default
+                console.log('No "ref" parameter found or button missing. Using default referral ID:', defaultReferralId);
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
