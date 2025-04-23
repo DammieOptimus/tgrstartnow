@@ -83,6 +83,24 @@
             margin-bottom: 2rem;
         }
 
+        /* Style for the TGR Ambassador Designation */
+        #referrer-designation {
+            font-family: 'Poppins', sans-serif; /* Or 'Montserrat' if you prefer heading font */
+            font-size: 1.05rem; /* Adjust size as needed - slightly smaller than name */
+            font-weight: 500; /* Semi-bold or adjust (e.g., 600) */
+            color: var(--accent-color-2); /* Use the attractive teal color */
+            margin-top: 2px;      /* Small space below the name */
+            margin-bottom: 8px;   /* Space above the phone number */
+            line-height: 1.3;    /* Adjust line spacing */
+            letter-spacing: 0.5px; /* Optional: slightly wider spacing */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Optional subtle shadow */
+        }
+
+        /* Optional: Adjust spacing on the phone number if needed */
+        #referrer-phone {
+           margin-top: 0; /* Ensure phone number doesn't have extra top margin now */
+        }
+        
         .referrer-info {
             margin-bottom: 2.5rem;
             display: flex;
@@ -697,6 +715,7 @@
                 </div>
                 <div class="referrer-details">
                     <h3 id="referrer-name">Your Guide</h3> <!-- Placeholder -->
+                    <p id="referrer-designation">TGR Ambassador</p> <!-- Placeholder -->
                     <p id="referrer-phone"><i class="fas fa-phone-alt"></i> Contact Me</p> <!-- Placeholder -->
                 </div>
             </div>
