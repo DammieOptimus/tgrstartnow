@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGR Landing Page Link Generator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f7f6;
+            max-width: 600px;
+            margin: 40px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+
+        h1,
+        h2 {
+            color: #0b132b;
+            /* TGR Navy */
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #3a506b;
+            /* TGR Muted Blue */
+        }
+
+        input[type="text"],
+        input[type="url"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            /* Include padding in width */
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px 20px;
+            background-color: #5bc0be;
+            /* TGR Teal */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3a9a96;
+        }
+
+        #result-area {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #eef;
+            border: 1px dashed #a0aec0;
+            /* TGR Greyish text */
+            border-radius: 5px;
+            word-wrap: break-word;
+            /* Prevent long URLs from overflowing */
+        }
+
+        #generated-link {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            font-family: monospace;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            box-sizing: border-box;
+        }
+
+        #copy-button {
+            margin-top: 10px;
+            background-color: #ffca3a;
+            /* TGR Gold */
+            color: #0b132b;
+            font-weight: bold;
+        }
+
+        #copy-button:hover {
+            background-color: #e0a800;
+        }
+
+        .copy-feedback {
+            display: inline-block;
+            margin-left: 10px;
+            color: green;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>TGR Landing Page Link Generator</h1>
+    <p>Enter the referrer's details below to generate the obfuscated link for your landing page.</p>
+
+    <form id="generator-form">
+        <div class="form-group">
+            <label for="landing-page-url">Landing Page URL (Base):</label>
+            <input type="text" id="landing-page-url"
+                value="https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/tgr_landing.html" required
+                placeholder="e.g., https://yourdomain.com/tgr_landing.html">
+            <small>Enter the full URL *to* your landing page file.</small>
+        </div>
+
+        <div class="form-group">
+            <label for="ref-id">Referral ID (ref):</label>
+            <input type="text" id="ref-id" required placeholder="e.g., DammieOptimus">
+        </div>
+
+        <div class="form-group">
+            <label for="ref-name">Referrer Full Name (name):</label>
+            <input type="text" id="ref-name" required placeholder="e.g., Dammie Optimus">
+        </div>
+
+        <div class="form-group">
+            <label for="ref-phone">Referrer Phone (phone):</label>
+            <input type="text" id="ref-phone" required placeholder="e.g., +2348012345678">
+        </div>
+
+        <div class="form-group">
+            <label for="ref-pic">Referrer Picture URL (pic):</label>
+            <input type="url" id="ref-pic" required placeholder="https://...">
+        </div>
+
+        <button type="button" id="generate-button">Generate Obfuscated Link</button>
+        <div id="error-message" class="error hidden"></div>
+    </form>
+
+    <div id="result-area" class="hidden">
+        <h2>Generated Link:</h2>
+        <textarea id="generated-link" rows="4" readonly></textarea>
+        <button type="button" id="copy-button">Copy to Clipboard</button>
+        <span id="copy-feedback" class="copy-feedback hidden">Copied!</span>
+    </div>
+
+
+    <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;"> <!-- Separator -->
+
+    <!-- START: Test Section -->
+    <div id="test-section">
+        <h2>Test Generated Link</h2>
+        <p>Paste the full generated link below to decode the parameters and verify.</p>
+
+        <div class="form-group">
+            <label for="test-link-input">Paste Obfuscated Link Here:</label>
+            <textarea id="test-link-input" rows="4" placeholder="Paste the full URL generated above..."></textarea>
+        </div>
+
+        <button type="button" id="test-button">Decode Link Parameters</button>
+
+        <div id="test-output-area" class="hidden" style="margin-top: 20px;">
+            <h3>Decoded Parameters:</h3>
+            <pre id="decoded-output"
+                style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 10px; border-radius: 4px; white-space: pre-wrap; word-wrap: break-word;"></pre>
+        </div>
+
+        <div id="test-error-message" class="error hidden" style="margin-top: 15px;"></div>
+    </div>
+    <!-- END: Test Section -->
+
+
+    <script>
+        const generateButton = document.getElementById('generate-button');
+        const copyButton = document.getElementById('copy-button');
+        const resultArea = document.getElementById('result-area');
+        const outputLink = document.getElementById('generated-link');
+        const errorMessage = document.getElementById('error-message');
+        const copyFeedback = document.getElementById('copy-feedback');
+
+        const testInput = document.getElementById('test-link-input');
+        const testButton = document.getElementById('test-button');
+        const testOutputArea = document.getElementById('test-output-area');
+        const decodedOutput = document.getElementById('decoded-output');
+        const testErrorMessage = document.getElementById('test-error-message');
+
+        generateButton.addEventListener('click', () => {
+            // Clear previous results and errors
+            resultArea.classList.add('hidden');
+            outputLink.value = '';
+            errorMessage.textContent = '';
+            errorMessage.classList.add('hidden');
+            copyFeedback.classList.add('hidden');
+
+
+            // Get values from inputs
+            const landingPageBaseUrl = document.getElementById('landing-page-url').value.trim();
+            const refId = document.getElementById('ref-id').value.trim();
+            const refName = document.getElementById('ref-name').value.trim();
+            const refPhone = document.getElementById('ref-phone').value.trim();
+            const refPic = document.getElementById('ref-pic').value.trim();
+
+            // Basic Validation
+            if (!landingPageBaseUrl || !refId || !refName || !refPhone || !refPic) {
+                errorMessage.textContent = 'Please fill in all required fields.';
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+
+            // Validate URL format slightly better (very basic)
+            try {
+                new URL(landingPageBaseUrl);
+                new URL(refPic);
+            } catch (_) {
+                errorMessage.textContent = 'Please enter valid URLs for Landing Page and Picture.';
+                errorMessage.classList.remove('hidden');
+                return;
+            }
+
+            // Create the data object
+            const data = {
+                ref: refId,
+                name: refName,
+                phone: refPhone,
+                pic: refPic
+            };
+
+            try {
+                // Convert object to JSON string
+                const jsonString = JSON.stringify(data);
+
+                // Base64 encode the JSON string
+                const encodedData = btoa(jsonString); // Standard Base64 encoding
+
+                // Create the final URL with the 'd' parameter
+                // encodeURIComponent is crucial for the Base64 string
+                const finalUrl = `${landingPageBaseUrl}?d=${encodeURIComponent(encodedData)}`;
+
+                // Display the result
+                outputLink.value = finalUrl;
+                resultArea.classList.remove('hidden');
+
+            } catch (error) {
+                console.error("Error during generation:", error);
+                errorMessage.textContent = 'An error occurred during link generation. Check console for details.';
+                errorMessage.classList.remove('hidden');
+            }
+        });
+
+        copyButton.addEventListener('click', () => {
+            if (!outputLink.value) return; // Don't copy if empty
+
+            outputLink.select(); // Select the text
+            outputLink.setSelectionRange(0, 99999); // For mobile devices
+
+            try {
+                // Use modern clipboard API
+                navigator.clipboard.writeText(outputLink.value).then(() => {
+                    // Success feedback
+                    copyFeedback.classList.remove('hidden');
+                    // Hide feedback after a few seconds
+                    setTimeout(() => {
+                        copyFeedback.classList.add('hidden');
+                    }, 2000);
+                }).catch(err => {
+                    console.error('Failed to copy: ', err);
+                    alert('Failed to copy link automatically. Please copy it manually.'); // Fallback message
+                });
+            } catch (err) {
+                console.error('Clipboard API not available: ', err);
+                alert('Failed to copy link automatically. Please copy it manually.'); // Fallback for older browsers
+            }
+        });
+
+
+        // --- START: Test/Decode Button Logic ---
+        testButton.addEventListener('click', () => {
+            // Clear previous test results and errors
+            testOutputArea.classList.add('hidden');
+            decodedOutput.textContent = '';
+            testErrorMessage.textContent = '';
+            testErrorMessage.classList.add('hidden');
+
+            const fullUrl = testInput.value.trim();
+
+            if (!fullUrl) {
+                testErrorMessage.textContent = 'Please paste a link into the text area.';
+                testErrorMessage.classList.remove('hidden');
+                return;
+            }
+
+            try {
+                // 1. Parse the URL string
+                const urlObject = new URL(fullUrl);
+
+                // 2. Get the 'd' parameter from the search query
+                const encodedData = urlObject.searchParams.get('d');
+
+                if (!encodedData) {
+                    throw new Error("URL does not contain the 'd' parameter.");
+                }
+
+                // 3. Decode the Base64 string (atob requires a valid Base64 string)
+                const jsonString = atob(encodedData);
+
+                // 4. Parse the JSON string back into an object
+                const decodedData = JSON.parse(jsonString);
+
+                // 5. Display the decoded object nicely formatted
+                decodedOutput.textContent = JSON.stringify(decodedData, null, 2); // Pretty print JSON
+                testOutputArea.classList.remove('hidden'); // Show the results
+
+            } catch (error) {
+                console.error("Error decoding link:", error);
+                let userMessage = 'Failed to decode link. ';
+                if (error instanceof TypeError && error.message.includes("URL")) {
+                    userMessage += 'Please ensure you paste a valid full URL.';
+                } else if (error.message.includes("atob")) {
+                    userMessage += 'The data parameter appears to be invalid Base64.';
+                } else if (error instanceof SyntaxError) { // JSON parsing error
+                    userMessage += 'The decoded data is not valid JSON.';
+                } else {
+                    userMessage += error.message; // General error message
+                }
+                testErrorMessage.textContent = userMessage;
+                testErrorMessage.classList.remove('hidden');
+            }
+        });
+        // --- END: Test/Decode Button Logic ---
+
+
+
+    </script>
+
+</body>
+
+</html>
