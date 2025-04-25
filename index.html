@@ -1080,6 +1080,54 @@
             if (yearElement) {
                 yearElement.textContent = currentYear;
             }
+            
+            const defaultReferralId = 'DefaultID'; // Fallback ID if none provided
+            const defaultName = 'Your Guide';
+            const defaultPhone = 'Contact Me';
+            const defaultPic = 'https://i.imgur.com/dC284XH.jpg'; // Placeholder image URL
+
+            // --- Variables to hold the final data (initialized with defaults) ---
+            let referralId = defaultReferralId;
+            let referrerName = defaultName;
+            let referrerPhone = defaultPhone;
+            let referrerPicUrl = defaultPic;
+
+            // --- Attempt to decode the obfuscated data ---
+            console.log("Attempting to read obfuscated parameters...");
+            const params = new URLSearchParams(window.location.search);
+            const encodedData = params.get('d'); // Look for the 'd' parameter
+    
+            if (encodedData) {
+                console.log("Found 'd' parameter:", encodedData);
+                try {
+                    // 1. Decode the Base64 string
+                    const jsonString = atob(encodedData); // Decode Base64
+                    //console.log("Decoded Base64 string:", jsonString);
+    
+                    // 2. Parse the JSON string back into an object
+                    const decodedData = JSON.parse(jsonString);
+                    //console.log("Parsed JSON data:", decodedData);
+    
+                    // 3. Assign values from decoded object, falling back to defaults if a key is missing
+                    referralId = decodedData.ref || defaultReferralId;
+                    referrerName = decodedData.name || defaultName;
+                    referrerPhone = decodedData.phone || defaultPhone;
+                    referrerPicUrl = decodedData.pic || defaultPic;
+    
+                    console.log("Successfully applied decoded referrer data.");
+    
+                } catch (error) {
+                    console.error("Error decoding referrer data from 'd' parameter:", error);
+                    console.warn("Falling back to default referrer values due to decoding error.");
+                    // Keep default values assigned initially if decoding fails
+                    referralId = defaultReferralId;
+                    referrerName = defaultName;
+                    referrerPhone = defaultPhone;
+                    referrerPicUrl = defaultPic;
+                }
+            } else {
+                console.warn("No obfuscated data parameter ('d') found in URL. Using default referrer values.");
+            }
 
             // Base URLs
             const baseUrl = 'https://www.topupandgetreward.com/register?referralid=';
@@ -1087,18 +1135,6 @@
             const fantasticTenBaseUrl = 'https://dammieoptimus.github.io/fantasticten/'; // Base for Fantastic 10
             // Relative path for Compensation Plan page
             const compensationPlanPage = 'tgrcompensationplan.html'; // Just the filename
-            
-            const defaultReferralId = 'DefaultID'; // Fallback ID if none provided
-            const defaultName = 'Your Guide';
-            const defaultPhone = 'Contact Me';
-            const defaultPic = 'https://i.imgur.com/dC284XH.jpg'; // Placeholder image URL
-
-            // Get URL parameters
-            const params = new URLSearchParams(window.location.search);
-            const referralId = params.get('ref') || defaultReferralId;
-            const referrerName = params.get('name') ? decodeURIComponent(params.get('name').replace(/\+/g, ' ')) : defaultName;
-            const referrerPhone = params.get('phone') ? decodeURIComponent(params.get('phone').replace(/\+/g, ' ')) : defaultPhone;
-            const referrerPicUrl = params.get('pic') || defaultPic;
 
             // --- Update Referrer Information ---
             const referrerSection = document.getElementById('referrer-section');
