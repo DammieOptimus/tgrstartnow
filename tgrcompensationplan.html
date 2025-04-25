@@ -758,6 +758,41 @@
             color: var(--dark-grey);
         }
 
+        /* --- YouTube Tutorial Button (Footer) --- */
+        .youtube-tutorial-button {
+            display: inline-block; /* Allow padding/margins */
+            margin-top: 1rem;      /* Space below main CTA (adjust as needed) */
+            padding: 0.6rem 1.3rem; /* Smaller padding */
+            font-size: 0.95rem;     /* Smaller font */
+            font-weight: 500;
+            color: var(--secondary-color); /* Teal text */
+            border: 1px solid var(--secondary-color); /* Teal border */
+            background-color: transparent;
+            border-radius: 20px; /* Rounded corners */
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+            vertical-align: middle;
+        }
+
+        .youtube-tutorial-button i {
+            color: #FF0000; /* YouTube Red */
+            margin-right: 8px;
+            font-size: 1.1em; /* Slightly larger icon */
+            vertical-align: middle; /* Align icon with text */
+        }
+
+        .youtube-tutorial-button:hover {
+            background-color: rgba(100, 255, 218, 0.1); /* Subtle hover background */
+            color: var(--white); /* Brighter text on hover */
+            transform: translateY(-2px); /* Slight lift on hover */
+            border-color: var(--white); /* Optional: change border color on hover */
+        }
+        
+         /* Ensure icon color stays red on hover */
+        .youtube-tutorial-button:hover i {
+             color: #FF0000;
+        }
+
         /* --- Utilities & Responsive --- */
         .text-accent {
             color: var(--accent-color);
@@ -1871,6 +1906,14 @@
                 id="referralButton" target="_blank" title="Register for TopUpAndGetReward">
                 <i class="fas fa-rocket"></i> Register & Activate Your TGR Account Now!
             </a>
+
+            <!-- START: YouTube Tutorial Button -->
+            <br> <!-- Add a line break for spacing, or use margin in CSS -->
+            <a href="https://www.youtube.com/watch?v=4zTEeEyGrY4" class="youtube-tutorial-button" target="_blank" title="Watch Pay & Activate Tutorial">
+                <i class="fab fa-youtube"></i> How to Fund Wallet & Activate Tutorial
+            </a>
+            <!-- END: YouTube Tutorial Button -->
+            
             <div class="footer-links">
                 <a href="https://www.topupandgetreward.com" target="_blank">TGR Website</a>
                 <a href="#packages">View Packages</a>
