@@ -430,13 +430,23 @@
             margin-bottom: 1.5rem;
         }
 
+        .table-responsive-wrapper {
+            overflow-x: auto; /* Enables horizontal scrolling if content overflows */
+            -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+            margin-bottom: 1rem; /* Optional: space below the table */
+            /* You can also add a subtle border or shadow here if desired */
+            /* border: 1px solid var(--card-border); */
+            /* border-radius: 6px; */
+        }
+
         .commission-table {
             width: 100%;
+            min-width: 600px; /* Adjust as needed based on your widest table content */
             border-collapse: collapse;
-            margin-top: 1.5rem;
+            /* Ensure the following are part of your existing .commission-table or add them */
             background: var(--card-bg);
             border-radius: 8px;
-            overflow: hidden;
+            overflow: hidden; /* This might need to be removed if it conflicts with wrapper, test it */
             box-shadow: 0 4px 10px var(--box-shadow-light);
         }
 
@@ -1295,7 +1305,8 @@
                     <h3 class="earning-title"><i class="fas fa-wallet text-secondary"></i> Personal Usage Cashback</h3>
                     <p class="earning-description">Get immediate discounts every time you use your TGR portal for
                         personal needs or to serve customers.</p>
-                    <table class="commission-table">
+                    <div class="table-responsive-wrapper">
+                        <table class="commission-table">
                         <thead>
                             <tr>
                                 <th>Service</th>
@@ -1326,6 +1337,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    </div>
                     <p class="note">Rates may vary slightly. This represents direct savings or profit when serving
                         others.</p>
                 </div>
@@ -1336,7 +1348,9 @@
                         (Level 1)</h3>
                     <p class="earning-description">Earn <span class="highlight">22%</span> of the registration fee
                         instantly (after a 5% company maintenance fee) when you personally sponsor a new member.</p>
-                    <table class="commission-table">
+                    
+                    <div class="table-responsive-wrapper">
+                        <table class="commission-table">
                         <thead>
                             <tr>
                                 <th>Package Referred</th>
@@ -1396,6 +1410,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    </div>
                     <p class="note">*You gain these Point Values if your own package allows PV earning. Example: A Coral
                         member sponsoring a Diamond earns ₦10,450 and 100 PV.</p>
                 </div>
@@ -1407,7 +1422,8 @@
                     <p class="earning-description">Earn passively as your team grows! Get commissions when members
                         sponsored by your downlines register new people. The depth you earn from depends on YOUR
                         package.</p>
-                    <table class="commission-table">
+                    <div class="table-responsive-wrapper">
+                        <table class="commission-table">
                         <thead>
                             <tr>
                                 <th>Level</th>
@@ -1473,6 +1489,8 @@
                             </tr>
                         </tbody>
                     </table>
+                    </div>
+                    
                     <p class="note">Percentages are applied to the registration fee, and then a 5% maintenance fee is
                         deducted. Your package determines the maximum level you earn from (e.g., Coral earns up to Level
                         6).</p>
@@ -1485,7 +1503,8 @@
                     <p class="earning-description">This is the power of residual income! Earn small percentages every
                         time anyone in your downline network (up to your eligible levels) performs a transaction. These
                         small amounts multiply massively with a large team.</p>
-                    <table class="commission-table">
+                    <div class="table-responsive-wrapper">
+                        <table class="commission-table">
                         <thead>
                             <tr>
                                 <th>Transaction Type</th>
@@ -1506,6 +1525,8 @@
                             </tr>
                         </tbody>
                     </table>
+                    </div>
+                    
                     <p class="note">Imagine thousands of team members recharging daily! Even ₦1 per person adds up
                         significantly. The depth you earn from depends on your package (up to 10 levels for Diamond/Exec
                         Diamond).</p>
